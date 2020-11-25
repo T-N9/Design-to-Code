@@ -1,0 +1,150 @@
+@media screen and (max-width:1200px){
+    
+}
+@media screen and (max-width:992px){
+    
+}
+@media screen and (max-width:768px){
+    body{
+        overflow-x: hidden;
+    }
+    #right-leave{
+        left: auto !important;
+        top: 890px !important;
+        right: -269px;
+    }
+    .right-leaves{
+        left: auto !important;
+        right: -200px;
+    }
+    #landingSection{
+        background-position: 171% -9%;
+        animation:animate-md-bg 0.5s ease;
+        .landing-left{
+            margin-top: 400px;
+        }
+    }
+    .d-mobile{
+        display: none;
+    }
+    #about{
+        .about1-left{
+            display: flex;
+            justify-content: center;
+            img{
+                width: 75%;
+            }
+        }
+        .about1-right{
+            margin-top: 50px;
+            width: 65%;
+        }
+        .about2-left{
+            margin-top: 50px;
+            width: 65%;
+        }
+        .about2-right{
+            display: flex;
+            justify-content: center;
+            img{
+                width: 75%;
+            }
+        }
+        .md-row{
+            flex-direction: column-reverse;
+        }
+    }
+    #resume{
+        background-position: 202% 90%;
+        animation:animate-md-bg-contact 0.5s ease;
+    }
+    #contact{
+        .contact-md-left{
+            margin-top: 200px;
+        }
+    }
+}
+@media screen and (max-width:576px){
+    #landingSection{
+        background-image: none;
+        .landing-row-sm{
+            flex-direction: column-reverse;
+        }
+        .landing-left{
+            margin-top: 10px;
+        }
+        .landing-right{
+            img{
+                display: block !important;
+            }
+        }
+        .left-leaves{
+            left: -105px;
+            img{
+                width: 85%;
+            }
+        }
+    }
+    #about{
+        .about1-right{
+            width: 90%;
+        }
+        .about2-left{
+            width: 90%;
+        }
+        .right-leaves{
+            bottom: -200px;
+            right: -273px;
+            img{
+                width: 70%;
+            }
+        }
+    }
+    #resume{
+        background-image: none;
+        .resume1{
+            img{
+                margin-left: 0px;
+            }
+        }
+        .resume3{
+            margin-top: 0px;
+            img{
+                margin-left: 0px;
+            }
+        }
+        .resume4{
+            margin-top: 0px;
+        }
+        #left-leave{
+            top: 480px;
+            left: -335px;
+            img{
+                width: 90%;
+            }
+        }
+        #left-leaves{
+            bottom: 500px;
+            img{
+                width: 80%;
+            }
+        }
+        #right-leave{
+            top: 970px !important;
+            right: -365px;
+            img{
+                width: 55%;
+            }
+        }
+        .contact-md-left{
+            // margin-top: 0px;
+        }
+        .contact-right{
+            img{
+                display: block !important;
+            }
+        }
+    }
+}
+@media screen and (max-width:375px){
+}

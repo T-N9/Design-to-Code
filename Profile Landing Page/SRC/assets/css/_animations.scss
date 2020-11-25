@@ -1,0 +1,89 @@
+@keyframes animate-bg{
+    from{
+        background-size: 75%;
+        background-position: 380% 300%;
+    }
+    to{
+        background-size: 75%;
+        background-position: 171% 105%;
+    }
+}
+@keyframes animate-md-bg{
+    from{
+        background-size: 75%;
+        background-position: 392% -70%;
+    }
+    to{
+        background-size: 75%;
+        background-position: 171% -9%;
+    }
+}
+
+@keyframes animate-bg-contact{
+    from{
+        background-size: 75%;
+        background-position: 395% 50%;
+    }
+    to{
+        background-size: 75%;
+        background-position: 202% 101%;
+    }
+}
+@keyframes animate-md-bg-contact{
+    from{
+        background-size: 75%;
+        background-position: 395% 75%;
+    }
+    to{
+        background-size: 75%;
+        background-position: 202% 90%;
+    }
+}
+
+@keyframes fade-left{
+    0%{
+        transform: translateX(-50px);
+        opacity: 0;
+    }
+    50%{
+        opacity: 0.5;
+    }
+    100%{
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+
+@keyframes fadein-roll{
+    0%{
+        opacity: 0;
+        transform: rotate(-30deg);
+    }
+    50%{
+        opacity: 0.5;
+    }
+    100%{
+        opacity: 1;
+        transform: rotate(0deg);
+    }
+}
+@keyframes fadein{
+    0%{
+        opacity: 0;
+    }
+    50%{
+        opacity: 0.5;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+@keyframes popin{
+    0%{
+        transform: scale(0);
+    }
+    100%{
+        transform: scale(1);
+    }
+}

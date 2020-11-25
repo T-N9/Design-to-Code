@@ -1,0 +1,263 @@
+@import 'variables';
+@import 'animations';
+*{
+    font-family: 'Open Sans', sans-serif;
+}
+html{
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+body{
+    overflow-x: hidden;
+}
+
+header{
+    position: fixed;
+    z-index: 5000;
+    width: 100%;
+    top: 0;
+    left: 0;
+    .nav-item{
+        width: 126px;
+        height: 42px;
+        display: flex;
+        justify-content: center;
+    }
+    .nav-link{
+        color: $my-dark-color !important;
+    }
+}
+.nav-active{
+    .nav-link{
+        color: white !important;
+    }
+    background-color: $my-dark-color;
+    border-radius: 50px;
+}
+a{
+    &:hover{
+        text-decoration: none;
+    }
+}
+.view-work-btn{
+    animation: fade-left 0.5s 1.4s ease both;
+    background-color: $my-dark-color;
+    color: white;
+    display: inline-flex;
+    width: 126px;
+    height: 42px;
+    font-size: 15px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+}
+.contact-btn{
+    animation: fade-left 0.5s 1.4s ease both;
+    background-color: $my-dark-color;
+    color: white;
+    display: inline-flex;
+    width: 179px;
+    height: 42px;
+    font-size: 15px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+}
+#landingSection{
+    height: 100vh;
+    position: relative;
+    background-image: url(../img/Illustration.svg);
+    background-repeat: no-repeat;
+    animation: animate-bg 0.5s ease;
+    background-size: 75%;
+    background-position: 171% 105%;
+    .landing-left{
+        margin-left: 45px;
+        h3{
+            animation: fade-left 0.5s 1s ease both;
+            color: $my-xl-dark-color;
+            font-size: 36px;
+            font-family: 'Roboto', sans-serif;
+            font-weight: bold;
+        }
+        p{
+            animation: fade-left 0.5s 1.2s ease both;
+            font-size: 18px;
+            color: $my-xl-dark-color;
+            line-height: 31px;
+        }
+        a{
+            &:hover{
+                text-decoration: none;
+            }
+        }
+        .social-links{
+            animation: fade-left 0.5s 1.6s ease both;
+            z-index: 3000;
+            display: flex;
+            width: 120px;
+            height: 20px;
+            justify-content: space-evenly;
+            margin-top:30px ;
+            margin-left: 10px;
+            a{
+                color: $my-dark-color;
+                font-size: 20px;
+            }
+        }
+    }
+    
+    .left-leaves{
+        animation: fadein-roll 0.5s 1.2s ease both;
+        position: absolute;
+        bottom: -140px;
+        left: -110px;
+        z-index: 3001;
+    }
+}
+@mixin about-h3 {
+    font-size: 20px;
+    font-weight: bold;
+}
+@mixin about-p {
+    font-size: 18px;
+    line-height: 32px;
+}
+#about{
+    position: relative;
+    .about-heading{
+        font-size: 30px;
+        animation: fade-left 0.5s 1s ease both;
+    }
+    .about1-left{
+        img{
+            animation: popin 0.5s 1.2s ease both;
+        }
+    }
+    .about1-right{
+        h3{
+            @include about-h3;
+            animation: fade-left 0.5s 1.4s ease both;
+        }
+        p{
+            @include about-p;
+            animation: fade-left 0.5s 1.6s ease both;
+        }
+    }
+    .about2-left{
+        h3{
+            animation: fade-left 0.5s 1.1s ease both;
+            @include about-h3;
+        }
+        p{
+            animation: fade-left 0.5s 1.2s ease both;
+            @include about-p;
+        }
+    }
+    .about2-right{
+        img{
+            animation: popin 0.5s 1s ease both;
+        }
+    }
+    .line1{
+        position: absolute;
+        top: 389px;
+        left: 385px;
+        z-index: -1;
+        animation: fadein 0.5s  ease both;
+    }
+    .line2{
+        position: absolute;
+        top: 827px;
+        left: 331px;
+        z-index: -1;
+        animation: fadein 0.5s  ease both;
+    }
+    .right-leaves{
+        animation: fadein-roll 0.5s 1.2s ease both;
+        position: absolute;
+        bottom: 30px;
+        left: 1145px;
+        z-index: 3001;
+    }
+}
+#resume{
+    background-image: url(../img/Contact-Illustration.svg);
+    background-repeat: no-repeat;
+    animation: animate-bg-contact 0.5s ease;
+    background-size: 75%;
+    background-position: 202% 101%;
+    position: relative;
+    .resume-heading{
+        font-size: 30px;
+        animation: fade-left 0.5s 1s ease both;
+    }
+    .resume1{
+        text-align: center;
+        margin-top: 65px;
+        img{
+            margin-left: 45px;
+        }
+    }
+    .resume2{
+        text-align: center;
+       
+    }
+    .resume3{
+        text-align: center;
+        margin-top: -40px;
+        img{
+            margin-left: 45px;
+        }
+    }
+    .resume4{
+        text-align: center;
+        margin-top: -120px;
+    }
+    #left-leave{
+        position: absolute;
+        z-index: 3005;
+        top: 10px;
+        left: -335px;
+    }
+    #right-leave{
+        position: absolute;
+        z-index: 3005;
+        top: 721px;
+        left: 1165px;
+    }
+    #contact{
+        position: relative;
+        .contact-left{
+            margin-left: 45px;
+            h3{
+                font-family: 'Roboto', sans-serif;
+                font-weight: bold;
+                font-size: 34px;
+            }
+            .social-links{
+                animation: fade-left 0.5s 1.6s ease both;
+                z-index: 3000;
+                display: flex;
+                width: 120px;
+                height: 20px;
+                justify-content: space-evenly;
+                margin-left: 10px;
+                a{
+                    color: $my-dark-color;
+                    font-size: 20px;
+                }
+            }
+        }
+        
+    }
+    #left-leaves{
+        position: absolute;
+        z-index: 3005;
+        bottom: 120px;
+        left: -113px;
+    }
+    
+}
+
+@import 'responsive';
