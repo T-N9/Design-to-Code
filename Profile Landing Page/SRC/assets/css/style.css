@@ -239,16 +239,23 @@ header .nav-item {
 }
 
 header .nav-link {
-  color: #3f3d56 !important;
+  color: #3f3d56;
+}
+
+header .nav-link:hover {
+  font-weight: bold;
+  -webkit-transition: font-weight 0.5s;
+  transition: font-weight 0.5s;
 }
 
 .nav-active {
+  width: 100%;
+  height: 100%;
+  color: white !important;
   background-color: #3f3d56;
   border-radius: 50px;
-}
-
-.nav-active .nav-link {
-  color: white !important;
+  text-align: center;
+  font-weight: bold;
 }
 
 a:hover {
@@ -532,6 +539,27 @@ a:hover {
   z-index: 3005;
   bottom: 120px;
   left: -113px;
+}
+
+.topPage {
+  position: fixed;
+  right: 30px;
+  bottom: 30px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  -webkit-transform: rotate(15deg);
+          transform: rotate(15deg);
+  z-index: 6000;
+}
+
+.topPage a {
+  color: #38d39f;
+  font-size: 60px;
+}
+
+.topPage:hover {
+  -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
 }
 
 @media screen and (max-width: 768px) {

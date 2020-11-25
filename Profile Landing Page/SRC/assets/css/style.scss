@@ -24,15 +24,21 @@ header{
         justify-content: center;
     }
     .nav-link{
-        color: $my-dark-color !important;
+        color: $my-dark-color;
+        &:hover{
+            font-weight: bold;
+            transition: font-weight 0.5s;
+        }
     }
 }
 .nav-active{
-    .nav-link{
-        color: white !important;
-    }
+    width: 100%;
+    height: 100%;
+    color: white !important;
     background-color: $my-dark-color;
     border-radius: 50px;
+    text-align: center;
+    font-weight: bold;
 }
 a{
     &:hover{
@@ -259,5 +265,19 @@ a{
     }
     
 }
-
+.topPage{
+    position: fixed;
+    right: 30px;
+    bottom: 30px;
+    transition: 0.5s;
+    transform: rotate(15deg);
+    z-index: 6000;
+    a{
+        color: $my-light-color;
+        font-size: 60px;
+    }
+    &:hover{
+        transform: rotate(0deg);
+    }
+}
 @import 'responsive';
