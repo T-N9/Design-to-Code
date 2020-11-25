@@ -8,7 +8,7 @@ $(document).ready(function(){
         $('.my-md-menu').removeClass('my-menu-animation-out');
     });
     
-// new WOW().init();
+    new WOW().init();
 
     let screenHeight=$(window).height();
     // console.log(screenHeight);
