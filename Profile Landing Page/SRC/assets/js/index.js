@@ -1,4 +1,9 @@
 $(document).ready(function(){
+    $('.navbar-toggler').click(function(){
+        // $('.my-md-menu').toggleClass('d-none');
+        $('.my-md-menu').toggleClass('my-menu-animation-in');
+        $('.my-md-menu').toggleClass('my-menu-animation-out');
+    });
 // new WOW().init();
 
     let screenHeight=$(window).height();
@@ -29,24 +34,29 @@ $(document).ready(function(){
         $(`.nav-link`).removeClass("nav-active");
         $(`.nav-link[href='#${current}']`).addClass("nav-active");
     }
+    function navActive_md(current){
+        $(`.nav-md-link`).removeClass("nav-active");
+        $(`.nav-md-link[href='#${current}']`).addClass("nav-active");
+    }
     function navScroll(){
         let currentSec=$("section[id]");
         currentSec.waypoint(function(direction){
             if(direction=="down"){
                 let currentId=$(this.element).attr('id');
-                console.log(currentId);
+                // console.log(currentId);
                 navActive(currentId);
+                navActive_md(currentId);
             }
         },{offset:'0px'});
         currentSec.waypoint(function(direction){
             if(direction=="up"){
                 let currentId=$(this.element).attr('id');
-                console.log(currentId);
+                // console.log(currentId);
                 navActive(currentId);
+                navActive_md(currentId);
             }
         },{offset:'-10px'});
     }
-
     navScroll();
 });
 

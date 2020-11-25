@@ -128,6 +128,36 @@
   }
 }
 
+@-webkit-keyframes fade-right-menu {
+  0% {
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    -webkit-transform: translateX(100px);
+            transform: translateX(100px);
+    opacity: 0;
+  }
+}
+
+@keyframes fade-right-menu {
+  0% {
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    -webkit-transform: translateX(100px);
+            transform: translateX(100px);
+    opacity: 0;
+  }
+}
+
 @-webkit-keyframes fadein-roll {
   0% {
     opacity: 0;
@@ -219,6 +249,59 @@ body {
   overflow-x: hidden;
 }
 
+.nav-active {
+  width: 100%;
+  height: 100%;
+  color: white !important;
+  background-color: #3f3d56;
+  border-radius: 50px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.my-md-menu {
+  position: fixed;
+  z-index: 6000;
+  right: 20px;
+  top: 60px;
+  padding: 20px;
+  border-radius: 20px;
+  background-color: #ffffff;
+  -webkit-transition: all 0.8s ease;
+  transition: all 0.8s ease;
+  visibility: hidden;
+  opacity: 0;
+}
+
+.my-md-menu ul {
+  margin: 0px;
+}
+
+.my-md-menu ul li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 126px;
+  height: 42px;
+  text-align: center;
+}
+
+.my-md-menu ul li a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #3f3d56;
+}
+
 header {
   position: fixed;
   z-index: 5000;
@@ -246,16 +329,6 @@ header .nav-link:hover {
   font-weight: bold;
   -webkit-transition: font-weight 0.5s;
   transition: font-weight 0.5s;
-}
-
-.nav-active {
-  width: 100%;
-  height: 100%;
-  color: white !important;
-  background-color: #3f3d56;
-  border-radius: 50px;
-  text-align: center;
-  font-weight: bold;
 }
 
 a:hover {
@@ -563,6 +636,24 @@ a:hover {
 }
 
 @media screen and (max-width: 768px) {
+  .my-menu-animation-in {
+    visibility: hidden;
+    opacity: 0;
+    -webkit-transform: translateX(50px);
+            transform: translateX(50px);
+  }
+  .my-menu-animation-out {
+    visibility: visible;
+    opacity: 1;
+    -webkit-transform: translateX(6px);
+            transform: translateX(6px);
+  }
+  .collapse {
+    display: none !important;
+  }
+  .navbar-nav {
+    display: none !important;
+  }
   body {
     overflow-x: hidden;
   }

@@ -5,6 +5,23 @@
     
 }
 @media screen and (max-width:768px){
+    .my-menu-animation-in{
+        visibility: hidden;
+        opacity: 0;
+        transform: translateX(50px);
+        
+    }
+    .my-menu-animation-out{
+        visibility: visible;
+        opacity: 1;
+        transform: translateX(6px);
+    }
+    .collapse{
+        display: none !important;
+    }
+    .navbar-nav{
+        display: none !important;
+    }
     body{
         overflow-x: hidden;
     }
