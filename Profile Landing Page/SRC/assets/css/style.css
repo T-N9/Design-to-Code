@@ -380,8 +380,8 @@ a:hover {
   position: relative;
   background-image: url(../img/Illustration.svg);
   background-repeat: no-repeat;
-  -webkit-animation: animate-bg 0.5s ease;
-          animation: animate-bg 0.5s ease;
+  -webkit-animation: animate-bg 0.5s 0.5s ease both;
+          animation: animate-bg 0.5s 0.5s ease both;
   background-size: 75%;
   background-position: 171% 105%;
 }
@@ -459,20 +459,20 @@ a:hover {
 #about .about1-right h3 {
   font-size: 20px;
   font-weight: bold;
-  -webkit-animation: fade-left 0.5s 1.4s ease both;
-          animation: fade-left 0.5s 1.4s ease both;
+  -webkit-animation: fade-left 0.5s 1s ease both;
+          animation: fade-left 0.5s 1s ease both;
 }
 
 #about .about1-right p {
   font-size: 18px;
   line-height: 32px;
-  -webkit-animation: fade-left 0.5s 1.6s ease both;
-          animation: fade-left 0.5s 1.6s ease both;
+  -webkit-animation: fade-left 0.5s 1.2s ease both;
+          animation: fade-left 0.5s 1.2s ease both;
 }
 
 #about .about2-left h3 {
-  -webkit-animation: fade-left 0.5s 1.1s ease both;
-          animation: fade-left 0.5s 1.1s ease both;
+  -webkit-animation: fade-left 0.5s 1s ease both;
+          animation: fade-left 0.5s 1s ease both;
   font-size: 20px;
   font-weight: bold;
 }
@@ -538,11 +538,18 @@ a:hover {
 }
 
 #resume .resume1 img {
+  -webkit-animation: popin 0.5s 1s ease both;
+          animation: popin 0.5s 1s ease both;
   margin-left: 45px;
 }
 
 #resume .resume2 {
   text-align: center;
+}
+
+#resume .resume2 img {
+  -webkit-animation: popin 0.5s 1s ease both;
+          animation: popin 0.5s 1s ease both;
 }
 
 #resume .resume3 {
@@ -551,12 +558,19 @@ a:hover {
 }
 
 #resume .resume3 img {
+  -webkit-animation: popin 0.5s 1s ease both;
+          animation: popin 0.5s 1s ease both;
   margin-left: 45px;
 }
 
 #resume .resume4 {
   text-align: center;
   margin-top: -120px;
+}
+
+#resume .resume4 img {
+  -webkit-animation: popin 0.5s 1s ease both;
+          animation: popin 0.5s 1s ease both;
 }
 
 #resume #left-leave {
@@ -582,14 +596,16 @@ a:hover {
 }
 
 #resume #contact .contact-left h3 {
+  -webkit-animation: fade-left 0.5s 1s ease both;
+          animation: fade-left 0.5s 1s ease both;
   font-family: 'Roboto', sans-serif;
   font-weight: bold;
   font-size: 34px;
 }
 
 #resume #contact .contact-left .social-links {
-  -webkit-animation: fade-left 0.5s 1.6s ease both;
-          animation: fade-left 0.5s 1.6s ease both;
+  -webkit-animation: fade-left 0.5s 1.2s ease both;
+          animation: fade-left 0.5s 1.2s ease both;
   z-index: 3000;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -636,6 +652,9 @@ a:hover {
 }
 
 @media screen and (max-width: 768px) {
+  .d-line {
+    display: none;
+  }
   .my-menu-animation-in {
     visibility: hidden;
     opacity: 0;
@@ -737,6 +756,8 @@ a:hover {
     margin-top: 10px;
   }
   #landingSection .landing-right img {
+    -webkit-animation: popin 0.5s 1s ease both;
+            animation: popin 0.5s 1s ease both;
     display: block !important;
   }
   #landingSection .left-leaves {
@@ -794,6 +815,8 @@ a:hover {
     width: 55%;
   }
   #resume .contact-right img {
+    -webkit-animation: popin 0.5s 1.6s ease both;
+            animation: popin 0.5s 1.6s ease both;
     display: block !important;
   }
 }

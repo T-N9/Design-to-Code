@@ -5,6 +5,9 @@
     
 }
 @media screen and (max-width:768px){
+    .d-line{
+        display: none;
+    }
     .my-menu-animation-in{
         visibility: hidden;
         opacity: 0;
@@ -92,6 +95,7 @@
         }
         .landing-right{
             img{
+                animation: popin 0.5s 1s ease both;
                 display: block !important;
             }
         }
@@ -158,6 +162,7 @@
         }
         .contact-right{
             img{
+                animation: popin 0.5s 1.6s ease both;
                 display: block !important;
             }
         }

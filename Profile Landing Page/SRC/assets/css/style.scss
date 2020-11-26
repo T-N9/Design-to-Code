@@ -115,7 +115,7 @@ a{
     position: relative;
     background-image: url(../img/Illustration.svg);
     background-repeat: no-repeat;
-    animation: animate-bg 0.5s ease;
+    animation: animate-bg 0.5s 0.5s ease both;
     background-size: 75%;
     background-position: 171% 105%;
     .landing-left{
@@ -184,16 +184,16 @@ a{
     .about1-right{
         h3{
             @include about-h3;
-            animation: fade-left 0.5s 1.4s ease both;
+            animation: fade-left 0.5s 1s ease both;
         }
         p{
             @include about-p;
-            animation: fade-left 0.5s 1.6s ease both;
+            animation: fade-left 0.5s 1.2s ease both;
         }
     }
     .about2-left{
         h3{
-            animation: fade-left 0.5s 1.1s ease both;
+            animation: fade-left 0.5s 1s ease both;
             @include about-h3;
         }
         p{
@@ -243,23 +243,30 @@ a{
         text-align: center;
         margin-top: 65px;
         img{
+            animation: popin 0.5s 1s ease both;
             margin-left: 45px;
         }
     }
     .resume2{
         text-align: center;
-       
+        img{
+            animation: popin 0.5s 1s ease both;
+        }
     }
     .resume3{
         text-align: center;
         margin-top: -40px;
         img{
+            animation: popin 0.5s 1s ease both;
             margin-left: 45px;
         }
     }
     .resume4{
         text-align: center;
         margin-top: -120px;
+        img{
+            animation: popin 0.5s 1s ease both;
+        }
     }
     #left-leave{
         position: absolute;
@@ -278,12 +285,13 @@ a{
         .contact-left{
             margin-left: 45px;
             h3{
+                animation: fade-left 0.5s 1s ease both;
                 font-family: 'Roboto', sans-serif;
                 font-weight: bold;
                 font-size: 34px;
             }
             .social-links{
-                animation: fade-left 0.5s 1.6s ease both;
+                animation: fade-left 0.5s 1.2s ease both;
                 z-index: 3000;
                 display: flex;
                 width: 120px;
