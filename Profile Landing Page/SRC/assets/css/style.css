@@ -259,6 +259,35 @@ body {
   font-weight: bold;
 }
 
+header {
+  position: fixed;
+  z-index: 5000;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+
+header .nav-item {
+  width: 126px;
+  height: 42px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+header .nav-link {
+  color: #3f3d56;
+}
+
+header .nav-link:hover {
+  font-weight: bold;
+  -webkit-transition: font-weight 0.5s;
+  transition: font-weight 0.5s;
+}
+
 .my-md-menu {
   position: fixed;
   z-index: 6000;
@@ -302,77 +331,8 @@ body {
   color: #3f3d56;
 }
 
-header {
-  position: fixed;
-  z-index: 5000;
-  width: 100%;
-  top: 0;
-  left: 0;
-}
-
-header .nav-item {
-  width: 126px;
-  height: 42px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-header .nav-link {
-  color: #3f3d56;
-}
-
-header .nav-link:hover {
-  font-weight: bold;
-  -webkit-transition: font-weight 0.5s;
-  transition: font-weight 0.5s;
-}
-
 a:hover {
   text-decoration: none;
-}
-
-.view-work-btn {
-  -webkit-animation: fade-left 0.5s 1.4s ease both;
-          animation: fade-left 0.5s 1.4s ease both;
-  background-color: #3f3d56;
-  color: white;
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  width: 126px;
-  height: 42px;
-  font-size: 15px;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  border-radius: 50px;
-}
-
-.contact-btn {
-  -webkit-animation: fade-left 0.5s 1.4s ease both;
-          animation: fade-left 0.5s 1.4s ease both;
-  background-color: #3f3d56;
-  color: white;
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  width: 179px;
-  height: 42px;
-  font-size: 15px;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  border-radius: 50px;
 }
 
 #landingSection {
@@ -439,6 +399,31 @@ a:hover {
   bottom: -140px;
   left: -110px;
   z-index: 3001;
+}
+
+.view-work-btn {
+  -webkit-animation: fade-left 0.5s 1.4s ease both;
+          animation: fade-left 0.5s 1.4s ease both;
+  background-color: #3f3d56;
+  color: white;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  width: 126px;
+  height: 42px;
+  font-size: 15px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 50px;
+}
+
+.view-work-btn-resume {
+  -webkit-animation: fade-left 0.5s 1s ease both;
+          animation: fade-left 0.5s 1s ease both;
 }
 
 #about {
@@ -623,32 +608,31 @@ a:hover {
   font-size: 20px;
 }
 
+#resume #contact .contact-btn {
+  -webkit-animation: fade-left 0.5s 1.2s ease both;
+          animation: fade-left 0.5s 1.2s ease both;
+  background-color: #3f3d56;
+  color: white;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  width: 179px;
+  height: 42px;
+  font-size: 15px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 50px;
+}
+
 #resume #left-leaves {
   position: absolute;
   z-index: 3005;
   bottom: 120px;
   left: -113px;
-}
-
-.topPage {
-  position: fixed;
-  right: 30px;
-  bottom: 30px;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
-  -webkit-transform: rotate(15deg);
-          transform: rotate(15deg);
-  z-index: 6000;
-}
-
-.topPage a {
-  color: #38d39f;
-  font-size: 60px;
-}
-
-.topPage:hover {
-  -webkit-transform: rotate(0deg);
-          transform: rotate(0deg);
 }
 
 @media screen and (max-width: 768px) {
