@@ -7,7 +7,7 @@ $(document).ready(function(){
         $('.my-md-menu').addClass('my-menu-animation-in');
         $('.my-md-menu').removeClass('my-menu-animation-out');
     });
-    new WOW().init();
+    // new WOW().init();
     function navActive(current){
         $(`.nav-link`).removeClass("nav-active");
         $(`.nav-link[href='#${current}']`).addClass("nav-active");
