@@ -12,12 +12,12 @@
       width: 100%;
       height: 100vh;
       background: white;
-      position: absolute;
+      position: fixed;
       top: 0;
       left: 0;
       z-index: 7000;
     }
-</style>
+  </style>
   <!-- Meta Tag -->
    <!-- Primary Meta Tags -->
   <title>Portfolio</title>
@@ -374,6 +374,13 @@
   <!-- Font Awesome JS -->
   <script defer src="dist/all.min.js"></script>
   <!-- Custom JS -->
+  <script>
+    $(window).on("load",function(){
+        $(".loader-page").fadeOut(500,function(){
+            this.remove();
+        });
+    });
+  </script>
   <script src="assets/js/index.js"></script>
 </body>
 </html>

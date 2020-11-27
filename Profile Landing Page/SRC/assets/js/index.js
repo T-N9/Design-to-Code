@@ -1,9 +1,5 @@
 $(document).ready(function(){
-    $(window).on("load",function(){
-        $(".loader-page").fadeOut(500,function(){
-            this.remove();
-        });
-    });
+    
     $('.navbar-toggler').click(function(){
         $('.my-md-menu').toggleClass('my-menu-animation-in');
         $('.my-md-menu').toggleClass('my-menu-animation-out');
