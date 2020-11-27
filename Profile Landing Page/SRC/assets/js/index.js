@@ -16,6 +16,7 @@ $(document).ready(function(){
     $('.nav-md-link').click(function(){
         $('.my-md-menu').addClass('my-menu-animation-in');
         $('.my-md-menu').removeClass('my-menu-animation-out');
+        $('#toggler-icon').removeClass('fa-times').addClass('fa-bars');
     });
     // new WOW().init();
     function navActive(current){
