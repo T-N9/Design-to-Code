@@ -41,6 +41,33 @@ body {
   font-weight: bold;
 }
 
+.navbar-toggler {
+  color: #3f3d56 !important;
+  width: 45px;
+  height: 45px;
+  font-size: 25px;
+  -webkit-transition: all 0.5s linear;
+  transition: all 0.5s linear;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.navbar-toggler:focus {
+  outline-color: #38d39f;
+}
+
+.navbar-toggler #toggler-icon {
+  -webkit-transition: all 2s linear;
+  transition: all 2s linear;
+}
+
 header {
   position: fixed;
   z-index: 5000;

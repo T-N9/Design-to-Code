@@ -3,7 +3,16 @@ $(document).ready(function(){
     $('.navbar-toggler').click(function(){
         $('.my-md-menu').toggleClass('my-menu-animation-in');
         $('.my-md-menu').toggleClass('my-menu-animation-out');
+        let icon_con=$('.my-md-menu').hasClass('my-menu-animation-in');
+        if(icon_con){
+            $('#toggler-icon').removeClass('fa-times').addClass('fa-bars');
+           
+        }else{
+            $('#toggler-icon').removeClass('fa-bars').addClass('fa-times');
+        }
     });
+    
+    
     $('.nav-md-link').click(function(){
         $('.my-md-menu').addClass('my-menu-animation-in');
         $('.my-md-menu').removeClass('my-menu-animation-out');
