@@ -1,4 +1,9 @@
 $(document).ready(function(){
+    $(window).on("load",function(){
+        $(".loader-page").fadeOut(500,function(){
+            this.remove();
+        });
+    });
     $('.navbar-toggler').click(function(){
         $('.my-md-menu').toggleClass('my-menu-animation-in');
         $('.my-md-menu').toggleClass('my-menu-animation-out');
@@ -13,8 +18,8 @@ $(document).ready(function(){
         $(`.nav-link[href='#${current}']`).addClass("nav-active");
     }
     function navActive_md(current){
-        $(`.nav-md-link`).removeClass("nav-active");
-        $(`.nav-md-link[href='#${current}']`).addClass("nav-active");
+        $(`.nav-md-link`).removeClass("nav-active-md");
+        $(`.nav-md-link[href='#${current}']`).addClass("nav-active-md");
     }
     function navScroll(){
         let currentSec=$("section[id]");

@@ -1,7 +1,23 @@
 <!DOCTYPE html>
-<!-- Loader Div -->
+<div class="loader-page">
+  <img src="loading.svg" alt="loading">
+</div>
 <html lang="en">
 <head>
+  <style>
+    .loader-page{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      height: 100vh;
+      background: white;
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 7000;
+    }
+</style>
   <!-- Meta Tag -->
    <!-- Primary Meta Tags -->
   <title>Portfolio</title>
@@ -40,9 +56,7 @@
   <link rel="stylesheet" href="assets/css/style.css">
   <!-- Shortcut Icon -->
   <link rel="icon" href="favicon.ico" type="image/x-icon">
-  <style>
-      /* For Loader */
-  </style>
+  
 </head>
 <body>
   <header>
@@ -78,7 +92,7 @@
       <div>
         <ul class="list-unstyled">
           <li>
-            <a href="#landingSection" class="nav-md-link nav-active">Work</a>
+            <a href="#landingSection" class="nav-md-link nav-active-md">Work</a>
           </li>
           <li>
             <a href="#about" class="nav-md-link">About</a>

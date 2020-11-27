@@ -31,6 +31,16 @@ body {
   font-weight: bold;
 }
 
+.nav-active-md {
+  width: 100%;
+  height: 100%;
+  color: white !important;
+  background-color: #54b192;
+  border-radius: 50px;
+  text-align: center;
+  font-weight: bold;
+}
+
 header {
   position: fixed;
   z-index: 5000;

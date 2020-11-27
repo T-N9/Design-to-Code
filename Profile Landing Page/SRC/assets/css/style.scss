@@ -33,6 +33,14 @@ body{
     text-align: center;
     font-weight: bold;
 }
+.nav-active-md{
+    @include full-w-h;
+    color: white !important;
+    background-color: $my-primary-color;
+    border-radius: 50px;
+    text-align: center;
+    font-weight: bold;
+}
 // header navbar 
 header{
     position: fixed;
