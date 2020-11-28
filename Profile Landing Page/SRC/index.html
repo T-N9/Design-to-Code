@@ -1,9 +1,23 @@
 <!DOCTYPE html>
-<!-- <div class="loader-page">
+<div class="loader-page">
   <img src="loading.svg" alt="loading">
-</div> -->
+</div>
 <html lang="en">
 <head>
+  <style>
+    .loader-page{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      height: 100vh;
+      background: white;
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index: 7000;
+    }
+  </style>
   <!-- Meta Tag -->
   <!-- Primary Meta Tags -->
   <title>Portfolio</title>
@@ -40,20 +54,6 @@
   <link rel="stylesheet" href="dist/animate.min.css"/>
   <!-- CSS File -->
   <link rel="stylesheet" href="assets/css/style.css">
-  <!-- <style>
-    .loader-page{
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      width: 100%;
-      height: 100vh;
-      background: white;
-      position: fixed;
-      top: 0;
-      left: 0;
-      z-index: 7000;
-    }
-  </style> -->
 </head>
 <body>
   <header>
@@ -371,13 +371,13 @@
   <!-- Font Awesome JS -->
   <script defer src="dist/all.min.js"></script>
   <!-- Custom JS -->
-  <!-- <script>
+  <script>
     $(window).on("load",function(){
         $(".loader-page").fadeOut(500,function(){
             this.remove();
         });
     });
-  </script> -->
+  </script>
   <script src="assets/js/index.js"></script>
 </body>
 </html>
