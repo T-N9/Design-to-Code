@@ -42,11 +42,5 @@ $(document).ready(function(){
         },{offset:'-10px'});
     }
     navScroll();
-
-    $(window).on("load",function(){
-        $(".loader-page").fadeOut(500,function(){
-            this.remove();
-        });
-    });
 });
 
