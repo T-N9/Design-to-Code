@@ -1,0 +1,28 @@
+@font-face{
+    font-family: "my-tail";
+    src: url("../fonts/Yellowtail-Regular.ttf");
+}
+@font-face{
+    font-family: "my-poppins-bold";
+    src: url("../fonts/Poppins-Bold.ttf");
+}
+@font-face{
+    font-family: "my-poppins-medium";
+    src: url("../fonts/Poppins-Medium.ttf");
+}
+@font-face{
+    font-family: "my-raleway";
+    src: url("../fonts/Raleway-Regular.ttf");
+}
+.my-logo-font{
+    font-family: "my-tail" !important;
+}
+.my-heading-bold-font{
+    font-family: "my-poppins-bold" !important;
+}
+.my-heading-medium-font{
+    font-family: "my-poppins-medium";
+}
+.my-para-font{
+    font-family: "my-raleway" !important;
+}
