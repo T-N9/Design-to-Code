@@ -69,7 +69,17 @@ body{
     color: white;
     background-color: #FE6845;
 }
-
+.resize-navbar{
+    padding-top:0.5rem;
+    padding-bottom: 0.5rem;
+    background-color: #FE6845;
+    transition: all 0.5s;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+.resize-navbar img{
+    width: 3rem;
+    transition: all 0.5s;
+}
 /* Window screen resize */
 @media screen and (max-width:1023px){
     .landing-section::before{
