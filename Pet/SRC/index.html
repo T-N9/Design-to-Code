@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pet Shop</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="dist/slick.css">
+    <link rel="stylesheet" href="dist/slick-theme.css">
+    <link rel="stylesheet" href="assets/css/fonts.css">
+    <link rel="stylesheet" href="assets/css/custom.css">
+    <link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon">
+</head>
+<body style="height: 600vh;" class=" bg-lightColor-0">
+    <!-- Landing page -->
+    <section id="landing" class="landing-section w-full h-screen relative">
+        <!-- Navigation section -->
+        <nav class="my-navbar fixed top-0 left-0 w-full px-5 md:px-16 py-6 z-50">
+            <div class="flex justify-between items-center">
+                <div>
+                    <img class="w-16" src="assets/img/logo.svg" alt="logo">
+                </div>
+                <div id="navbarMD" class="navbar-md hide rounded-lg text-xl shadow-lg">
+                    <ul class="para-font text-center text-primaryColor-0">
+                        <a href="#landing">
+                            <li class="nav-active">Location</li>
+                        </a>
+                        <a href="#blog">
+                            <li class="">Blog</li>
+                        </a>
+                        <a href="#services">
+                            <li class="">Services</li>
+                        </a>
+                        <a href="">
+                            <li class="">About Us</li>
+                        </a>
+                        <a href="">
+                            <li class="">Franchise with Us</li>
+                        </a>
+                    </ul>
+                </div>
+                <!-- Navbar on tablets and mobile phones -->
+                <div id="navToggler" class="block lg:hidden">
+                        <div>
+                            <svg id="navIcon0" class="nav-icon block" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-menu"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+                            <svg id="navIcon1" class="nav-icon hidden" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-x"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+                        </div>
+                </div>
+                <!-- Navbar on large screen -->
+                <div class="hidden lg:block">
+                    <ul class="flex para-font text-white">
+                        <a href="#landing">
+                            <li class="p-4">Location</li>
+                        </a>
+                        <a href="#blog">
+                            <li class="p-4">Blog</li>
+                        </a>
+                        <a href="#services">
+                            <li class="p-4">Services</li>
+                        </a>
+                        <a href="#about">
+                            <li class="p-4">About Us</li>
+                        </a>
+                        <a href="#fwu">
+                            <li class="p-4">Franchise with Us</li>
+                        </a>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Landing divisions -->
+        <div class="absolute top-0 left-0 w-full mt-28 md:mt-52 lg:mt-32 z-20">
+            <div class="grid grid-rows-1 lg:grid-cols-2">
+                <!-- Left landing division -->
+                <div class="landing-left">
+                    <div class="flex items-center h-full">
+                        <div class="ml-12 md:ml-20">
+                            <h1 class="heading-font text-white text-4xl md:text-5xl mb-8">We Get Pet Care!</h1>
+                            <p class="para-font text-white  mb-8">For over 17 Years, Fetch! Pet Care has been a trusted<br class="hidden md:block">
+                                partner in keeping pets healthy and happy!</p>
+
+                            <div class="md:flex items-center">
+                                <a href="#">
+                                    <div class="service-btn para-font bg-blueColor-0">
+                                        Schedule Service
+                                    </div>
+                                </a>
+                                <a href="tel:866.338.2463">
+                                    <p class="para-text text-white mt-6 ml-3 md:mt-0 md:ml-6">
+                                        Or Call 866.338.2463
+                                    </p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Right landing division -->
+                <div class="landing-right pt-4">
+                    <div class=" flex justify-center">
+                        <img class="w-4/5 md:w-1/2 lg:w-2/4" src="assets/img/landing.png" alt="landing-dog-img">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Blog section -->
+    <section id="blog" class="blog-section relative w-full h-screen">
+        <div class="container w-full h-screen m-auto flex">
+            <div class="grid grid-rows-1 lg:grid-cols-2 mx-auto">
+                <div class="blog-left  mt-48 md:flex md:justify-center">
+                    <div class="ml-12 md:mr-0 md:ml-0 lg:mr-32">
+                        <div class="mb-6">
+                            <h1 class="text-3xl mini-heading-font text-primaryColor-0">Our Services</h1>
+                        </div>
+                        <div class="ml-0 md:ml-6">
+                            <p class="mb-6 text-gray-400">National Brand With a Local Feel.<br class="block">
+                                Experience the Fetch! Difference
+                            </p>
+                            <p class="text-primaryColor-0 font-bold mb-4">
+                                Enter Your Location and Fetch Our Services
+                            </p>
+                            <!-- input Btn -->
+                            <div class="bg-white shadow-md py-8 w-48 h-14 flex items-center justify-center rounded-full">
+                                <div class="flex justify-center items-center">
+                                    <input class="input-zip mr-4 p-2" type="text" placeholder="Zip Code">
+                                    <a href="#">
+                                        <div class="bg-primaryColor-0 flex items-center justify-center rounded-full w-12 h-12">
+                                            <img src="assets/img/arrow.svg" alt="arrow">
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="blog-right mt-0 md:mt-48">
+                    <div class="s-blog-right md:ml-0 lg:ml-32">
+                        <div class="flex ml-4 md:ml-0 card-margin">
+                            <div class="service-card">
+                                <div class="text-center">
+                                    <img class="w-2/4 m-auto mb-4" src="assets/img/dog.svg" alt="dog-walking-service">
+                                    <p class="xmini-heading-font text-xs text-grayColor-0">Dog Walking</p>
+                                </div>
+                            </div>
+                            <div class="service-card">
+                                <div class="text-center">
+                                    <img class="w-2/4 m-auto mb-4" src="assets/img/cat.svg" alt="cat-sitting-service">
+                                    <p class="xmini-heading-font text-xs text-grayColor-0">Pet Sitting</p>
+                                </div>
+                            </div>
+                        </div> 
+                        <div class="flex ml-4 md:ml-0 card-margin">
+                            <div class="service-card">
+                                <div class="text-center">
+                                    <img class="w-2/4 m-auto mb-4" src="assets/img/pet-house.svg" alt="overnight-service">
+                                    <p class="xmini-heading-font text-xs text-grayColor-0">Overnight Care</p>
+                                </div>
+                            </div>
+                            <div class="service-card">
+                                <div class="text-center">
+                                    <img class="w-2/4 m-auto mb-4" src="assets/img/dog-foot.svg" alt="other-service">
+                                    <p class="xmini-heading-font text-xs text-grayColor-0">Other Services</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="services" class="mt-32 md:mt-0 services-section relative w-full">
+        <div class="pt-40">
+
+        </div>
+        <div class="mb-12 w-full text-center">
+            <h1 class="mini-heading-font text-3xl text-primaryColor-0">
+                Here's what pet owners have to<br class="hidden md:block">
+                say about Fetch! Pet Care...
+            </h1>
+        </div>
+        <div class="w-full text-center flex justify-center">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 p-8">
+                <div class="customer-card-red">
+                    <img class="mx-auto w-5/12 md:w-1/5 mb-6" src="assets/img/Ellipse 9.png" alt="customer">
+                    <p class="xmini-heading-font text-white text-2xl mb-6">Kenned Dsouza</p>
+                    <p class="para-font text-white">
+                        "I like that I got to meet the dog Walker who is walking
+                        my dog daily and consult with her. I also appreciate the
+                        daily communication I get about the dog
+                        and how my dog is doing."
+                    </p>
+                </div>
+                <div class="customer-card-blue">
+                    <img class="mx-auto w-5/12 md:w-1/5 mb-6" src="assets/img/Ellipse 9.png" alt="customer">
+                    <p class="xmini-heading-font text-white text-2xl mb-6">Kenned Dsouza</p>
+                    <p class="para-font text-white">
+                        "I like that I got to meet the dog Walker who is walking
+                        my dog daily and consult with her. I also appreciate the
+                        daily communication I get about the dog
+                        and how my dog is doing."
+                    </p>
+                </div>
+                <div class="customer-card-red ">
+                    <img class="mx-auto w-5/12 md:w-1/5 mb-6" src="assets/img/Ellipse 9.png" alt="customer">
+                    <p class="xmini-heading-font text-white text-2xl mb-6">Kenned Dsouza</p>
+                    <p class="para-font text-white">
+                        "I like that I got to meet the dog Walker who is walking
+                        my dog daily and consult with her. I also appreciate the
+                        daily communication I get about the dog
+                        and how my dog is doing."
+                    </p>
+                </div>
+                <div class="customer-card-blue">
+                    <img class="mx-auto w-5/12 md:w-1/5 mb-6" src="assets/img/Ellipse 9.png" alt="customer">
+                    <p class="xmini-heading-font text-white text-2xl mb-6">Kenned Dsouza</p>
+                    <p class="para-font text-white">
+                        "I like that I got to meet the dog Walker who is walking
+                        my dog daily and consult with her. I also appreciate the
+                        daily communication I get about the dog
+                        and how my dog is doing."
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="dist/jquery.min.js"></script>
+    <script src="dist/jquery-migrate-1.2.1.min.js"></script>
+    <script src="dist/slick.min.js"></script>
+    <script src="assets/js/app.js"></script>
+</body>
+</html>

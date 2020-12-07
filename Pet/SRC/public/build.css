@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components{
+    .service-btn{
+        @apply shadow-md flex justify-center items-center rounded-full p-2 w-40 h-14 text-sm text-white font-bold transform duration-500 ease-out hover:scale-90;
+    }
+    .service-card{
+        @apply mb-4 mr-4 p-4 rounded-lg bg-white shadow-md flex justify-center items-center w-36 h-36;
+    }
+    .nav-active{
+        @apply  bg-primaryColor-0 text-white font-bold shadow-md rounded-lg;
+    }
+    .customer-card-red{
+        @apply shadow-lg rounded-lg bg-primaryColor-0 p-8 w-full md:w-3/4  mx-auto lg:ml-auto lg:mr-0;
+    }
+    .customer-card-blue{
+        @apply shadow-lg rounded-lg bg-blueColor-0 p-8 w-full md:w-3/4 mx-auto lg:mr-auto lg:ml-0;
+    }
+}

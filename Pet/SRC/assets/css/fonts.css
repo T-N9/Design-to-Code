@@ -1,0 +1,28 @@
+@font-face{
+    font-family: "Museo";
+    src: url("../fonts/MuseoSansRounded700.otf");
+}
+@font-face{
+    font-family: "Confortaa-Bold";
+    src: url("../fonts/Comfortaa-Bold.ttf");
+}
+@font-face{
+    font-family: "Confortaa-Regular";
+    src: url("../fonts/Comfortaa-Regular.ttf");
+}
+@font-face{
+    font-family: "OpenSans";
+    src: url("../fonts/OpenSans-Regular.ttf");
+}
+.heading-font{
+    font-family: "Museo";
+}
+.mini-heading-font{
+    font-family: "Confortaa-Bold";
+}
+.xmini-heading-font{
+    font-family:"Confortaa-Regular";
+}
+.para-font{
+    font-family: "OpenSans";
+}

@@ -1,0 +1,113 @@
+.show{
+    transform: scale3d(1,1,1);
+}
+.hide{
+    transform: scale3d(0,0,0);
+}
+/* Scroll smooth */
+html{
+    scroll-behavior: smooth;
+}
+/* preventing overflow in X direction */
+body{
+    overflow-x: hidden; 
+}
+ /* before css for background image  */
+.landing-section::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 120vh;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    background-image: url("../img/landing-bg-sp.svg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position:top;
+}
+.blog-section::before{
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: -1;
+    width: 100%;
+    height: 180vh;
+
+    background-image: url("../img/blog-bg-sp.svg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: 0% 0%;
+}
+.input-zip{
+    width: 50%;
+    height: 80%;
+    outline: none;
+}
+.input-zip:focus{
+    /* outline: 2px solid #FE6845 !important; */
+    border: 2px solid #FE6845;
+    border-radius: 10px;
+}
+.nav-icon{
+    transition: 1s ease-in;
+}
+.navbar-md{
+    position: fixed;
+    top: 72px;
+    right: 30px;
+    padding: 10px;
+    background-color: white;
+    z-index: 5000;
+    transition: all 0.2s ease-in-out;
+}
+.navbar-md li{
+    padding: 15px 10px;
+}
+.nav-active{
+    color: white;
+    background-color: #FE6845;
+}
+
+/* Window screen resize */
+@media screen and (max-width:1023px){
+    .landing-section::before{
+        background-size: 288%;
+    }
+    
+}
+/* Tablets screens */
+@media screen and (max-width:768px){
+    .landing-section::before{
+        background-size: 288%;
+    }
+    .blog-section::before{
+        background-size: 220%;
+        background-position: 90% 0%;
+    }
+}
+@media screen and (max-width:640px){
+    .landing-section::before{
+        background-size: 555%;
+    }
+    .blog-section::before{
+        background-size: 302%;
+        background-position: 82% 50%;
+    }
+    .blog-right{
+        display: flex;
+        justify-content: center;
+        margin-top: 34rem;
+    }
+    .s-blog-right{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+}
+@media screen and (max-width:320px){
+    .card-margin{
+        margin-left: 0rem !important;
+    }
+}
