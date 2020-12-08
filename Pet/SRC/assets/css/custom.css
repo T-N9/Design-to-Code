@@ -1,3 +1,14 @@
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
 .show{
     transform: scale3d(1,1,1);
 }
@@ -36,6 +47,19 @@ body{
     height: 180vh;
 
     background-image: url("../img/blog-bg-sp.svg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: 0% 0%;
+}
+.how-fetch-section::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: 170vh;
+    background-image: url("../img/Circle-bg.svg");
     background-repeat: no-repeat;
     background-size: 100%;
     background-position: 0% 0%;
@@ -80,6 +104,23 @@ body{
     width: 3rem;
     transition: all 0.5s;
 }
+.how-paths{
+    width: 70%;
+    position: relative;
+}
+.how-paths::before{
+    content: "";
+    background-image:url("../img/path-lines.svg") ;
+    background-repeat: no-repeat;
+    background-size: 55%;
+    background-position: 50% 50%;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
 /* Window screen resize */
 @media screen and (max-width:1023px){
     .landing-section::before{
@@ -92,10 +133,17 @@ body{
     .landing-section::before{
         background-size: 288%;
     }
+    .how-paths{
+        width: 60%;
+    }
+    .how-right .s-how-right{
+        justify-content: center;
+    }
     .blog-section::before{
         background-size: 220%;
         background-position: 90% 0%;
     }
+
 }
 @media screen and (max-width:640px){
     .landing-section::before{
@@ -114,6 +162,13 @@ body{
         display: flex;
         justify-content: center;
         flex-wrap: wrap;
+    }
+    .how-fetch-section::before{
+        background-size: 165%;
+        background-position: 100% 40%;
+    }
+    .how-paths{
+        width: 90%;
     }
 }
 @media screen and (max-width:320px){

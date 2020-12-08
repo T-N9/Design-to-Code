@@ -120,14 +120,16 @@
                                 Enter Your Location and Fetch Our Services
                             </p>
                             <!-- input Btn -->
-                            <div class="bg-white shadow-md py-8 w-48 h-14 flex items-center justify-center rounded-full">
+                            <div class="bg-white shadow-md py-8 pl-4 w-52 h-14 flex items-center justify-center rounded-full">
                                 <div class="flex justify-center items-center">
-                                    <input class="input-zip mr-4 p-2" type="text" placeholder="Zip Code">
-                                    <a href="#">
-                                        <div class="bg-primaryColor-0 flex items-center justify-center rounded-full w-12 h-12">
-                                            <img src="assets/img/arrow.svg" alt="arrow">
-                                        </div>
-                                    </a>
+                                    <form>
+                                        <input class="input-zip mr-4 p-2" type="number" placeholder="Zip Code" required>
+                                        <button type="submit">
+                                            <div class="bg-primaryColor-0 flex items-center justify-center ml-4 rounded-full w-12 h-12">
+                                                <img src="assets/img/arrow.svg" alt="arrow">
+                                            </div>
+                                        </button>
+                                    </form>
                                 </div>
                             </div>
                         </div>
@@ -168,6 +170,7 @@
             </div>
         </div>
     </section>
+    <!-- Feedback Section -->
     <section id="services" class="mt-32 md:mt-0 services-section relative w-full">
         <div class="pt-40">
 
@@ -181,7 +184,7 @@
         <div class="w-full text-center flex justify-center">
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 p-8">
                 <div class="customer-card-red">
-                    <img class="mx-auto w-5/12 md:w-1/5 mb-6" src="assets/img/Ellipse 9.png" alt="customer">
+                    <img class="mx-auto w-5/12 md:w-1/5 mb-6 rounded-full" src="assets/img/customer1.png" alt="customer">
                     <p class="xmini-heading-font text-white text-2xl mb-6">Kenned Dsouza</p>
                     <p class="para-font text-white">
                         "I like that I got to meet the dog Walker who is walking
@@ -191,34 +194,85 @@
                     </p>
                 </div>
                 <div class="customer-card-blue">
-                    <img class="mx-auto w-5/12 md:w-1/5 mb-6" src="assets/img/Ellipse 9.png" alt="customer">
-                    <p class="xmini-heading-font text-white text-2xl mb-6">Kenned Dsouza</p>
+                    <img class="mx-auto w-5/12 md:w-1/5 mb-6 rounded-full" src="assets/img/customer2.png" alt="customer">
+                    <p class="xmini-heading-font text-white text-2xl mb-6">Lori Brookdale</p>
                     <p class="para-font text-white">
-                        "I like that I got to meet the dog Walker who is walking
-                        my dog daily and consult with her. I also appreciate the
-                        daily communication I get about the dog
-                        and how my dog is doing."
+                        "This is a professional pet care business, with a huge heart.  I highly recommend Thrive to anyone who is looking for care for their animals."
                     </p>
                 </div>
                 <div class="customer-card-red ">
-                    <img class="mx-auto w-5/12 md:w-1/5 mb-6" src="assets/img/Ellipse 9.png" alt="customer">
-                    <p class="xmini-heading-font text-white text-2xl mb-6">Kenned Dsouza</p>
+                    <img class="mx-auto w-5/12 md:w-1/5 mb-6 rounded-full" src="assets/img/customer3.jpg" alt="customer">
+                    <p class="xmini-heading-font text-white text-2xl mb-6">Kristin Havel</p>
                     <p class="para-font text-white">
-                        "I like that I got to meet the dog Walker who is walking
-                        my dog daily and consult with her. I also appreciate the
-                        daily communication I get about the dog
-                        and how my dog is doing."
+                        "Cheryl is also very reliable and responsive to our needs.  When we traveled to Hawaii Cheryl would send me little update text messages with beautiful pictures of BB.  Her texts made my day!"
                     </p>
                 </div>
                 <div class="customer-card-blue">
-                    <img class="mx-auto w-5/12 md:w-1/5 mb-6" src="assets/img/Ellipse 9.png" alt="customer">
-                    <p class="xmini-heading-font text-white text-2xl mb-6">Kenned Dsouza</p>
+                    <img class="mx-auto w-5/12 md:w-1/5 mb-6 rounded-full" src="assets/img/customer4.jpg" alt="customer">
+                    <p class="xmini-heading-font text-white text-2xl mb-6">Steven Williams</p>
                     <p class="para-font text-white">
-                        "I like that I got to meet the dog Walker who is walking
-                        my dog daily and consult with her. I also appreciate the
-                        daily communication I get about the dog
-                        and how my dog is doing."
+                        "This Pet Care is an excellent business.  Cheryl, the owner, is amazing with all of the animals in her care.  She cares for them as if they are her own. "
                     </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="how-fetch" class="how-fetch-section relative w-full h-screen">
+        <div class="container w-full mx-auto flex">
+            <div class="grid w-full grid-rows-1 lg:grid-cols-2 mx-auto mt-48">
+                <div class="how-left">
+                    <div class="flex justify-center lg:justify-end">
+                        <div  class="how-paths flex flex-col">
+                            <div class="service-card">
+                                <div class="text-center">
+                                    <img class="w-2/4 m-auto mb-4" src="assets/img/calender.svg" alt="calender">
+                                    <p class="xmini-heading-font text-xs text-grayColor-0">Reserve</p>
+                                </div>
+                            </div>
+                            <div class="service-card self-end">
+                                <div class="text-center">
+                                    <img class="w-2/4 m-auto mb-4" src="assets/img/match.svg" alt="Match">
+                                    <p class="xmini-heading-font text-xs text-grayColor-0">Match</p>
+                                </div>
+                            </div>
+                            <div class="service-card">
+                                <div class="text-center">
+                                    <img class="w-2/4 m-auto mb-4" src="assets/img/relax.svg" alt="relax">
+                                    <p class="xmini-heading-font text-xs text-grayColor-0">Relax</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="how-right  order-first mb-20 lg:mb-0">
+                    <div class="s-how-right flex">
+                        <div class="ml-0 lg:ml-16">
+                            <div class="mb-6">
+                                <h1 class="text-3xl mini-heading-font text-primaryColor-0">How it Works</h1>
+                            </div>
+                            <div class="">
+                                <p class="mb-6 text-gray-400">Because finding a good pet sitter shouldn’t be <br class="block">
+                                    a hassle. With Fetch! It’s as easy as…
+                                </p>
+                                <p class="text-primaryColor-0 font-bold mb-4">
+                                    Enter Your Location and Fetch Our Services
+                                </p>
+                                <!-- input Btn -->
+                                <div class="bg-white shadow-md py-8 pl-4 w-52 h-14 flex items-center justify-center rounded-full">
+                                    <div class="flex justify-center items-center">
+                                        <form>
+                                            <input class="input-zip mr-4 p-2" type="number" placeholder="Zip Code" required>
+                                            <button type="submit">
+                                                <div class="bg-primaryColor-0 flex items-center justify-center ml-4 rounded-full w-12 h-12">
+                                                    <img src="assets/img/arrow.svg" alt="arrow">
+                                                </div>
+                                            </button>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
