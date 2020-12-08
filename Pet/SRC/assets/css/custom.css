@@ -80,7 +80,7 @@ body{
 .navbar-md{
     position: fixed;
     top: 72px;
-    right: 30px;
+    right: 17px;
     padding: 10px;
     background-color: white;
     z-index: 5000;
@@ -148,6 +148,15 @@ body{
     }
     .s-join-now{
         flex-direction: column;
+    }
+    .seen-channels{
+        flex-direction: column;
+    }
+    .seen-channels img{
+        width: 25%;
+        margin-bottom: 2rem;
+        margin-left: auto;
+        margin-right: auto;
     }
 }
 @media screen and (max-width:640px){
