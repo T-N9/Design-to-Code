@@ -121,6 +121,9 @@ body{
     left: 0;
     z-index: -1;
 }
+.join-now-img{
+    width: 55%;
+}
 /* Window screen resize */
 @media screen and (max-width:1023px){
     .landing-section::before{
