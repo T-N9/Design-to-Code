@@ -146,7 +146,9 @@ body{
         background-size: 220%;
         background-position: 90% 0%;
     }
-
+    .s-join-now{
+        flex-direction: column;
+    }
 }
 @media screen and (max-width:640px){
     .landing-section::before{
