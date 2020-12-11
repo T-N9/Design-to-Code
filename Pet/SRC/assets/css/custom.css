@@ -124,6 +124,23 @@ body{
 .join-now-img{
     width: 55%;
 }
+footer{
+    background-image: url("../img/footer-bg.svg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: 0% 0%;
+}
+.footer-about{
+    margin: 10px 0;
+    color: white;
+}
+.info > :first-child{
+    color: #FFE530;
+    font-weight: bold;
+    
+}
+
+
 /* Window screen resize */
 @media screen and (max-width:1023px){
     .landing-section::before{
@@ -152,11 +169,19 @@ body{
     .seen-channels{
         flex-direction: column;
     }
+    .about-info{
+        flex-direction: column;
+        align-items: flex-start;
+    }
     .seen-channels img{
         width: 25%;
-        margin-bottom: 2rem;
+        margin-bottom: 3rem;
         margin-left: auto;
         margin-right: auto;
+    }
+    footer{
+        background-size: 450%;
+        background-position: center;
     }
 }
 @media screen and (max-width:640px){
@@ -183,6 +208,9 @@ body{
     }
     .how-paths{
         width: 90%;
+    }
+    footer{
+        background-size: 900%;
     }
 }
 @media screen and (max-width:320px){
