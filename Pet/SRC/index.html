@@ -11,7 +11,7 @@
 </head>
 <body class=" bg-lightColor-0">
     <!-- Landing page -->
-    <section id="landing" class="landing-section w-full h-screen relative">
+    <section id="home" class="landing-section w-full h-screen relative">
         <!-- Navigation section -->
         <nav class="my-navbar transition-all duration-300 fixed top-0 left-0 w-full px-5 md:px-16 py-6 z-50">
             <div class="flex justify-between items-center">
@@ -20,20 +20,22 @@
                 </div>
                 <div id="navbarMD" class="navbar-md hide rounded-lg text-xl shadow-lg">
                     <ul class="para-font text-center text-primaryColor-0">
-                        <a href="#landing">
-                            <li class="nav-active">Location</li>
+                        <a href="#home" class="nav-item">
+                            <li id="_home" class="nav-link nav-active">
+                                Home
+                            </li>
                         </a>
-                        <a href="#blog">
-                            <li class="">Blog</li>
+                        <a href="#services"  class="nav-item">
+                            <li id="_services" class="nav-link ">Services</li>
                         </a>
-                        <a href="#services">
-                            <li class="">Services</li>
+                        <a href="#feedbacks"  class="nav-item">
+                            <li id="_feedbacks" class="nav-link ">Feedbacks</li>
                         </a>
-                        <a href="">
-                            <li class="">About Us</li>
+                        <a href="#how"  class="nav-item">
+                            <li id="_how" class="nav-link ">How?</li>
                         </a>
-                        <a href="">
-                            <li class="">Franchise with Us</li>
+                        <a href="#fwu"  class="nav-item">
+                            <li id="_fwu" class="nav-link ">Franchise with Us</li>
                         </a>
                     </ul>
                 </div>
@@ -47,20 +49,20 @@
                 <!-- Navbar on large screen -->
                 <div class="hidden lg:block">
                     <ul class="flex para-font text-white">
-                        <a href="#landing">
-                            <li class="p-4">Location</li>
-                        </a>
-                        <a href="#blog">
-                            <li class="p-4">Blog</li>
+                        <a href="#home">
+                            <li id="_home" class="nav-lg-link nav-lg-active p-4">Home</li>
                         </a>
                         <a href="#services">
-                            <li class="p-4">Services</li>
+                            <li id="_services" class="nav-lg-link p-4">Services</li>
                         </a>
-                        <a href="#about">
-                            <li class="p-4">About Us</li>
+                        <a href="#feedbacks">
+                            <li id="_feedbacks" class="nav-lg-link p-4">Feedbacks</li>
+                        </a>
+                        <a href="#how">
+                            <li id="_how" class="nav-lg-link p-4">How?</li>
                         </a>
                         <a href="#fwu">
-                            <li class="p-4">Franchise with Us</li>
+                            <li id="_fwu" class="nav-lg-link p-4">Franchise with Us</li>
                         </a>
                     </ul>
                 </div>
@@ -102,7 +104,7 @@
         </div>
     </section>
     <!-- Blog section -->
-    <section id="blog" class="blog-section relative w-full h-screen">
+    <section id="services" class="blog-section relative w-full h-screen">
         <div class="container w-full h-screen m-auto flex">
             <div class="grid grid-rows-1 lg:grid-cols-2 mx-auto">
                 <div class="blog-left  mt-48 md:flex md:justify-center">
@@ -133,7 +135,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="blog-right mt-0 md:mt-48">
+                <div class="blog-right mt-0 md:mb-36 lg:mt-48">
                     <div class="s-blog-right md:ml-0 lg:ml-32">
                         <div class="flex ml-4 md:ml-0 card-margin">
                             <div class="service-card">
@@ -169,7 +171,7 @@
         </div>
     </section>
     <!-- Feedback Section -->
-    <section id="services" class="mt-32 md:mt-0 services-section relative w-full">
+    <section id="feedbacks" class="mt-32 md:mt-0 services-section relative w-full">
         <div class="pt-40">
 
         </div>
@@ -216,7 +218,7 @@
         </div>
     </section>
     <!-- HOW Service -->
-    <section id="howFetch" class="how-fetch-section relative w-full h-screen">
+    <section id="how" class="how-fetch-section relative w-full h-screen">
         <div class="container w-full mx-auto flex">
             <div class="grid w-full grid-rows-1 lg:grid-cols-2 mx-auto mt-48">
                 <div class="how-left">
@@ -277,7 +279,7 @@
         </div>
     </section>
     <!-- Join Now  -->
-    <section id="joinNow" class="join-now-section w-full mt-96 md:mt-0">
+    <section id="fwu" class="join-now-section w-full mt-96 md:mt-0">
         <div class="container mx-auto mt-56 pt-32">
             <div class="s-join-now w-11/12 md:w-3/4 mx-auto bg-blueColor-0 rounded-2xl shadow-md flex items-center lg:justify-center p-7">
                 <div class="join-now-img mb-8 lg:mb-0">
@@ -400,6 +402,7 @@
         </div>
     </Footer>
     <script src="dist/jquery.min.js"></script>
+    <script src="dist/jquery.waypoints.min.js"></script>
     <script src="assets/js/app.js"></script>
 </body>
 </html>

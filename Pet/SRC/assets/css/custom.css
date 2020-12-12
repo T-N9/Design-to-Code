@@ -1,3 +1,10 @@
+img{
+    pointer-events: none;
+}
+.nav-lg-active{
+    border-bottom: 4px solid white;
+    
+}
 /* Chrome, Safari, Edge, Opera */
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
@@ -88,10 +95,6 @@ body{
 }
 .navbar-md li{
     padding: 15px 10px;
-}
-.nav-active{
-    color: white;
-    background-color: #FE6845;
 }
 .resize-navbar{
     padding-top:0.5rem;
