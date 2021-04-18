@@ -30,7 +30,7 @@
         }
         #description{
             position: absolute;
-            top: 50vh;
+            top: 50vh !important;
             z-index: 3;
             background-color: rgba(white, 0.5);
             padding: 10px;
@@ -121,7 +121,7 @@
         }
         #description{
             margin-left: 75px !important;
-            top: 58vh;
+            top: 55vh !important;
         }
     }
     #logo{

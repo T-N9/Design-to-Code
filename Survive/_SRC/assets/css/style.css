@@ -288,7 +288,7 @@ body #mainSection #pagination .active {
   }
   #landingLeft #description {
     position: absolute;
-    top: 50vh;
+    top: 50vh !important;
     z-index: 3;
     background-color: rgba(255, 255, 255, 0.5);
     padding: 10px;
@@ -386,7 +386,7 @@ body #mainSection #pagination .active {
   }
   #landingLeft #description {
     margin-left: 75px !important;
-    top: 58vh;
+    top: 55vh !important;
   }
   #logo {
     width: 25% !important;
