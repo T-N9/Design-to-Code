@@ -1,0 +1,127 @@
+@media screen and (max-width:1200px){
+    
+}
+@media screen and (max-width:992px){
+    #landingLeft{
+        height: 100vh;
+    }
+    #landingRight{
+        position: absolute;
+        z-index: -1;
+        bottom: 30px;
+    }
+    #imgSubContainer{
+        text-align: end !important;
+        position: relative;
+        width: 85%;
+        margin-left: 40px;
+    }
+    .hero-img{
+        width: 85% !important;
+        height: 715px !important;
+        z-index: 0;
+    }
+}
+@media screen and (max-width:768px){
+    .lg-nav{
+        display: none !important;
+    }
+    .md-nav{
+        display: block !important;
+        div{
+            position: relative;
+            border-top: 2px solid rgba(0, 0, 0, 0.5);
+            width: 22px;
+            height: 9px;
+            margin-top: 6px;
+            transition: 1s;
+            &::before{
+                content: "";
+                width: 22px;
+                top: -9px;
+                position: absolute;
+                border-top: 2px solid rgba(0, 0, 0, 0.5);
+                transition: 0.5s;
+            }
+            &::after{
+                content: "";
+                width: 22px;
+                bottom: 0;
+                position: absolute;
+                border-top: 2px solid rgba(0, 0, 0, 0.5);
+                transition: 0.5s;
+            }
+        }
+        .close{
+            border-top: none;
+            transition: 1s;
+            &::before{
+                content: "";
+                width: 25px;
+                top: -1px;
+                transform: rotate(40deg);
+                transition: 0.5s;
+            }
+            &::after{
+                content: "";
+                width: 25px;
+                bottom: 8px;
+                transform: rotate(-40deg);
+                transition: 0.5s;
+            }
+        }
+    }
+    #mdNav{
+        position: absolute;
+        top: 90px;
+        right: 133px;
+        background-color:white;
+        transition: all 0.8s ease;
+        border-radius: 2px;
+        z-index: -1;
+        ul{
+            padding: 0;
+            margin-bottom: 0 !important;
+            text-align: center !important;
+            list-style-type: none !important;
+            display: block !important;
+            #hLine{
+                margin: auto;
+                width: 80%;
+                border-top: 0.1px solid rgba(black,0.3);
+            }
+        }
+        
+    }
+    #downArrow{
+        right: 83px !important;
+        top: 100px !important;
+    }
+}
+@media screen and (max-width:576px){
+    #mdNav{
+        right: 50px !important;
+    }
+    #landingRight{
+        top: 144px !important;
+    }
+    #imgSubContainer{
+        width: 95%;
+        margin-left: 17px !important;
+    }
+    .hero-img{
+        width: 100% !important;
+    }
+
+}
+@media screen and (max-width:375px){
+    #landingRight{
+        top: 220px !important;
+    }
+    #imgSubContainer{
+        width: 100% !important;
+    }
+    #mdNav{
+        right: 13px !important;
+    }
+}
