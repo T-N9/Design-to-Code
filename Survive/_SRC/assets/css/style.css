@@ -439,7 +439,7 @@ body #mainSection #pagination .active {
     top: 63vh;
   }
   #landingRight {
-    top: 0px !important;
+    top: 95px !important;
   }
   .hero-img {
     height: 530px !important;
@@ -452,12 +452,6 @@ body #mainSection #pagination .active {
   }
   #mdNav {
     right: 90px !important;
-  }
-}
-
-@media screen and (max-width: 360px) and (min-height: 760px) {
-  #socialBar {
-    bottom: 110px !important;
   }
 }
 
