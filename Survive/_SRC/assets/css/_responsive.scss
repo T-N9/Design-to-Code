@@ -7,7 +7,7 @@
     }
     #landingRight{
         position: absolute;
-        z-index: -1;
+        z-index: 0;
         bottom: 30px;
     }
     #imgSubContainer{
@@ -23,6 +23,17 @@
     }
 }
 @media screen and (max-width:768px){
+    #landingLeft{
+        #caption{
+            position: absolute;
+            z-index: 3;
+        }
+        #description{
+            position: absolute;
+            top: 50vh;
+            z-index: 3;
+        }
+    }
     #landingRight{
         width: 96% !important;
     }
@@ -102,6 +113,15 @@
     }
 }
 @media screen and (max-width:576px){
+    #landingLeft{
+        #caption{
+            left: -25px !important;
+        }
+        #description{
+            margin-left: 75px !important;
+            top: 58vh;
+        }
+    }
     #logo{
         width: 25% !important;
     }
@@ -110,6 +130,12 @@
     }
     #navBar{
         padding: 10px 0px 10px 15px  !important;
+        height: 90px;
+        #navList{
+            ul{
+                margin-bottom: 0px !important;
+            }
+        }
     }
     #mdNav{
         right: 85px !important;
@@ -122,7 +148,7 @@
         }
     }
     #socialBar{
-        left: 12px !important;
+        left: -8px !important;
         bottom: 45px !important;
     }
     #landingRight{
@@ -143,6 +169,14 @@
     }
 }
 @media screen and (max-width:375px){
+    #landingLeft{
+        #caption{
+            left: -25px !important;
+        }
+        #description{
+            top: 63vh;
+        }
+    }
     #landingRight{
         top: 0px !important;
     }
@@ -157,5 +191,16 @@
     }
     #mdNav{
         right: 90px !important;
+    }
+}
+@media screen and (max-width:320px){
+    #socialBar{
+        bottom: -25px !important;
+    }
+    #landingLeft #description {
+        top: 75vh;
+    }
+    #landingRight {
+        top: 95px !important;
     }
 }

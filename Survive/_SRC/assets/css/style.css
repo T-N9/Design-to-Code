@@ -265,7 +265,7 @@ body #mainSection #pagination .active {
   }
   #landingRight {
     position: absolute;
-    z-index: -1;
+    z-index: 0;
     bottom: 30px;
   }
   #imgSubContainer {
@@ -282,6 +282,15 @@ body #mainSection #pagination .active {
 }
 
 @media screen and (max-width: 768px) {
+  #landingLeft #caption {
+    position: absolute;
+    z-index: 3;
+  }
+  #landingLeft #description {
+    position: absolute;
+    top: 50vh;
+    z-index: 3;
+  }
   #landingRight {
     width: 96% !important;
   }
@@ -370,6 +379,13 @@ body #mainSection #pagination .active {
 }
 
 @media screen and (max-width: 576px) {
+  #landingLeft #caption {
+    left: -25px !important;
+  }
+  #landingLeft #description {
+    margin-left: 75px !important;
+    top: 58vh;
+  }
   #logo {
     width: 25% !important;
   }
@@ -378,6 +394,10 @@ body #mainSection #pagination .active {
   }
   #navBar {
     padding: 10px 0px 10px 15px  !important;
+    height: 90px;
+  }
+  #navBar #navList ul {
+    margin-bottom: 0px !important;
   }
   #mdNav {
     right: 85px !important;
@@ -390,7 +410,7 @@ body #mainSection #pagination .active {
     margin-top: 130px !important;
   }
   #socialBar {
-    left: 12px !important;
+    left: -8px !important;
     bottom: 45px !important;
   }
   #landingRight {
@@ -412,6 +432,12 @@ body #mainSection #pagination .active {
 }
 
 @media screen and (max-width: 375px) {
+  #landingLeft #caption {
+    left: -25px !important;
+  }
+  #landingLeft #description {
+    top: 63vh;
+  }
   #landingRight {
     top: 0px !important;
   }
@@ -426,6 +452,18 @@ body #mainSection #pagination .active {
   }
   #mdNav {
     right: 90px !important;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  #socialBar {
+    bottom: -25px !important;
+  }
+  #landingLeft #description {
+    top: 75vh;
+  }
+  #landingRight {
+    top: 95px !important;
   }
 }
 /*# sourceMappingURL=style.css.map */
