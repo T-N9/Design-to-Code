@@ -411,7 +411,7 @@ body #mainSection #pagination .active {
   }
   #socialBar {
     left: -8px !important;
-    bottom: 45px !important;
+    bottom: 150px !important;
   }
   #landingRight {
     width: 85% !important;
@@ -439,7 +439,7 @@ body #mainSection #pagination .active {
     top: 63vh;
   }
   #landingRight {
-    top: 95px !important;
+    top: 0px !important;
   }
   .hero-img {
     height: 530px !important;
