@@ -282,6 +282,9 @@ body #mainSection #pagination .active {
 }
 
 @media screen and (max-width: 768px) {
+  #landingRight {
+    width: 96% !important;
+  }
   .lg-nav {
     display: none !important;
   }
@@ -367,30 +370,62 @@ body #mainSection #pagination .active {
 }
 
 @media screen and (max-width: 576px) {
+  #logo {
+    width: 25% !important;
+  }
+  #navList ul li {
+    padding: 20px 15px !important;
+  }
+  #navBar {
+    padding: 10px 0px 10px 15px  !important;
+  }
   #mdNav {
-    right: 50px !important;
+    right: 85px !important;
+    top: 75px !important;
+  }
+  #landingLeft {
+    padding: 0 !important;
+  }
+  #landingLeft div {
+    margin-top: 130px !important;
+  }
+  #socialBar {
+    left: 12px !important;
+    bottom: 45px !important;
   }
   #landingRight {
-    top: 144px !important;
+    width: 85% !important;
+    top: 18px !important;
+    padding: 0 !important;
   }
   #imgSubContainer {
     width: 95%;
-    margin-left: 17px !important;
+    margin-left: 0px !important;
   }
   .hero-img {
     width: 100% !important;
+    height: 605px !important;
+  }
+  #pagination {
+    right: 10px !important;
   }
 }
 
 @media screen and (max-width: 375px) {
   #landingRight {
-    top: 220px !important;
+    top: 0px !important;
+  }
+  .hero-img {
+    height: 530px !important;
+  }
+  #pagination {
+    right: 5px !important;
   }
   #imgSubContainer {
     width: 100% !important;
   }
   #mdNav {
-    right: 13px !important;
+    right: 90px !important;
   }
 }
 /*# sourceMappingURL=style.css.map */
