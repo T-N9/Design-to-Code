@@ -168,6 +168,7 @@
         right: 10px !important;
     }
 }
+
 @media screen and (max-width:375px){
     #landingLeft{
         #caption{
@@ -192,6 +193,12 @@
     #mdNav{
         right: 90px !important;
     }
+}
+@media screen and (max-width:360px) and (min-height:760px){
+    #socialBar {
+        bottom: 110px !important;
+    }
+
 }
 @media screen and (max-width:320px){
     #socialBar{
