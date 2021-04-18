@@ -32,6 +32,8 @@
             position: absolute;
             top: 50vh;
             z-index: 3;
+            background-color: rgba(white, 0.5);
+            padding: 10px;
         }
     }
     #landingRight{
@@ -150,6 +152,7 @@
     #socialBar{
         left: -8px !important;
         bottom: 120px !important;
+        color: $bg-color;
     }
     #landingRight{
         width: 85% !important;
