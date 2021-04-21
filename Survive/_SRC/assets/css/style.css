@@ -3,6 +3,16 @@
   src: url(../fonts/Teko-Regular.ttf);
 }
 
+@font-face {
+  font-family: TTLakes;
+  src: url(../fonts/TTLakes.otf);
+}
+
+@font-face {
+  font-family: Adevale;
+  src: url(../fonts/Adevale.ttf);
+}
+
 @-webkit-keyframes hero-img-ani {
   from {
     opacity: 0.5;
@@ -60,7 +70,7 @@
 body {
   background-color: #EDF0F2;
   font-family: Teko;
-  height: 300vh;
+  height: 400vh;
 }
 
 body #mainSection #mainContent #navBar {
@@ -87,6 +97,10 @@ body #mainSection #mainContent #navBar #logo {
 
 body #mainSection #mainContent #navBar #navList {
   text-transform: uppercase;
+}
+
+body #mainSection #mainContent #navBar #navList #mdNav {
+  display: none;
 }
 
 body #mainSection #mainContent #navBar #navList ul {
@@ -237,6 +251,143 @@ body #mainSection #mainContent #landingPage .row #landingRight #imgContainer #ch
   background-color: #EDF0F2;
 }
 
+body #mainSection #mainContent #challengePage #challengeLeft h2 {
+  font-weight: bold;
+  font-size: 50px;
+  margin-left: 50px;
+}
+
+body #mainSection #mainContent #challengePage #challengeLeft .challenge-fact {
+  margin: 20px 0;
+  margin-left: 35px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body #mainSection #mainContent #challengePage #challengeLeft .challenge-fact .challenge-img {
+  height: 260px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+body #mainSection #mainContent #challengePage #challengeLeft .challenge-fact .key-skills {
+  color: #E4003B;
+  font-weight: bold;
+}
+
+body #mainSection #mainContent #challengePage #challengeLeft .challenge-fact h2 {
+  font-weight: 500;
+  font-size: 36px;
+  margin-left: 0px;
+}
+
+body #mainSection #mainContent #challengePage .challenge-para {
+  font-family: Arial, Helvetica, sans-serif !important;
+  font-size: 14px;
+}
+
+body #mainSection #mainContent #challengePage .more-btn {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+}
+
+body #mainSection #mainContent #challengePage .more-btn img {
+  -webkit-transition: 0.5s linear;
+  transition: 0.5s linear;
+}
+
+body #mainSection #mainContent #challengePage .more-btn .btn-caption {
+  padding-left: 15px;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 17px;
+  margin-bottom: 0px;
+  font-family: Teko !important;
+  font-weight: 600;
+}
+
+body #mainSection #mainContent #challengePage .more-btn:hover img {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+  -webkit-transform-style: flat;
+          transform-style: flat;
+  -webkit-transition: -webkit-transform 0.5s linear;
+  transition: -webkit-transform 0.5s linear;
+  transition: transform 0.5s linear;
+  transition: transform 0.5s linear, -webkit-transform 0.5s linear;
+}
+
+body #mainSection #mainContent #challengePage #challengeRight {
+  position: relative;
+}
+
+body #mainSection #mainContent #challengePage #challengeRight #caption {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: 65px;
+}
+
+body #mainSection #mainContent #challengePage #challengeRight #caption h3 {
+  color: #E4003B;
+  font-weight: 600;
+  font-size: 60px;
+}
+
+body #mainSection #mainContent #challengePage #challengeRight #caption h1 {
+  color: white;
+  font-size: 170px;
+  font-weight: 600;
+  text-transform: uppercase;
+  line-height: 0.8;
+}
+
+body #mainSection #mainContent #challengePage #challengeRight .f-caption {
+  font-family: Adevale;
+  color: #E4003B;
+  font-size: 80px;
+  top: 55px;
+  right: 45px;
+  position: absolute;
+  -webkit-transform: rotate(-25deg);
+          transform: rotate(-25deg);
+  z-index: 5;
+}
+
+body #mainSection #mainContent #challengePage #challengeRight .shoe-img {
+  -webkit-filter: drop-shadow(0px 9px 10px black);
+          filter: drop-shadow(0px 9px 10px black);
+  position: absolute;
+  z-index: 5;
+  top: 149px;
+  right: -15px;
+  pointer-events: none;
+}
+
+body #mainSection #mainContent #challengePage #challengeRight #missionCard {
+  width: 57%;
+  position: absolute;
+  bottom: 40px;
+  left: 125px;
+}
+
+body #mainSection #mainContent #challengePage #challengeRight #missionCard h1 {
+  font-weight: 600;
+}
+
+body #mainSection #mainContent #challengePage #challengeRight #missionCard h3 {
+  font-weight: 500;
+}
+
 body #mainSection #pagination {
   position: fixed;
   right: 20px;
@@ -282,6 +433,9 @@ body #mainSection #pagination .active {
 }
 
 @media screen and (max-width: 768px) {
+  #mdNav {
+    display: block !important;
+  }
   #landingLeft #caption {
     position: absolute;
     z-index: 3;
@@ -291,7 +445,7 @@ body #mainSection #pagination .active {
     top: 50vh !important;
     z-index: 3;
     background-color: rgba(255, 255, 255, 0.5);
-    padding: 10px;
+    padding: 5px 10px !important;
   }
   #landingRight {
     width: 96% !important;
@@ -378,6 +532,32 @@ body #mainSection #pagination .active {
     right: 83px !important;
     top: 100px !important;
   }
+  .challenge-fact {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    text-align: center;
+  }
+  .skills-caption {
+    width: 65%;
+  }
+  .challenge-img {
+    width: 80% !important;
+    margin-top: 10px;
+    margin-bottom: 20px;
+  }
+  #challengeRight #caption {
+    margin-left: 108px !important;
+  }
+  #challengeRight .shoe-img {
+    top: 122px !important;
+    right: 18px !important;
+    width: 80% !important;
+  }
+  #challengeRight #missionCard {
+    bottom: -520px !important;
+  }
 }
 
 @media screen and (max-width: 576px) {
@@ -432,6 +612,33 @@ body #mainSection #pagination .active {
   #pagination {
     right: 10px !important;
   }
+  #challengeLeft h2 {
+    margin-left: 0px !important;
+  }
+  #challengeLeft .challenge-fact {
+    margin-left: 0px !important;
+  }
+  #challengeLeft .skills-caption {
+    width: 100% !important;
+  }
+  #challengeLeft .challenge-img {
+    width: 100% !important;
+  }
+  #challengeRight #caption {
+    margin-left: 0px !important;
+  }
+  #challengeRight #caption h1 {
+    font-size: 155px !important;
+  }
+  #challengeRight .shoe-img {
+    width: 100% !important;
+    right: 0 !important;
+  }
+  #challengeRight #missionCard {
+    width: 100% !important;
+    bottom: -420px !important;
+    left: 0 !important;
+  }
 }
 
 @media screen and (max-width: 375px) {
@@ -456,6 +663,12 @@ body #mainSection #pagination .active {
   #mdNav {
     right: 90px !important;
   }
+  #challengeRight #caption h1 {
+    font-size: 140px !important;
+  }
+  #challengeRight #missionCard {
+    bottom: -445px !important;
+  }
 }
 
 @media screen and (max-width: 320px) {
@@ -467,6 +680,21 @@ body #mainSection #pagination .active {
   }
   #landingRight {
     top: 95px !important;
+  }
+  #challengePage {
+    padding: 0 !important;
+  }
+  #challengePage .mt-2 {
+    margin-top: 4.5rem !important;
+  }
+  #challengePage #challengeLeft h2 {
+    font-size: 45px !important;
+  }
+  #challengePage #challengeRight #caption h1 {
+    font-size: 120px !important;
+  }
+  #challengePage #challengeRight #missionCard {
+    bottom: -465px !important;
   }
 }
 /*# sourceMappingURL=style.css.map */
