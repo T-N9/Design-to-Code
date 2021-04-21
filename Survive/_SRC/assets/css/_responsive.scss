@@ -198,9 +198,16 @@
     #pagination{
         right: 10px !important;
     }
+    #challengePage{
+        padding: 0 !important;
+        .mt-2{
+            margin-top: 0rem !important;
+        }
+    }
     #challengeLeft{
         h2{
             margin-left: 0px !important;
+            font-size: 40px !important;
         }
         .challenge-fact{
             margin-left: 0px !important;

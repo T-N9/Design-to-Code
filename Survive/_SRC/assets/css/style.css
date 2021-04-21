@@ -612,8 +612,15 @@ body #mainSection #pagination .active {
   #pagination {
     right: 10px !important;
   }
+  #challengePage {
+    padding: 0 !important;
+  }
+  #challengePage .mt-2 {
+    margin-top: 0rem !important;
+  }
   #challengeLeft h2 {
     margin-left: 0px !important;
+    font-size: 40px !important;
   }
   #challengeLeft .challenge-fact {
     margin-left: 0px !important;
