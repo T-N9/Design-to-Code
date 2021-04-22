@@ -21,12 +21,15 @@
 }
 .pageSwitch-animation-inverse{
     visibility: hidden;
+    height: 0;
     opacity: 0;
     -webkit-transform: translateY(-50px);
     transform: translateY(-50px);
 }
 .pageSwitch-animation{
     visibility: visible;
+    height: auto;
+    display: block;
     opacity: 1;
     -webkit-transform: translateY(6px);
     transform: translateY(6px);
