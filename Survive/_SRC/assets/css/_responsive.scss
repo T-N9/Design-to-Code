@@ -196,6 +196,34 @@
         height: 605px !important;
     }
     #pagination{
+        #pageSwitch{
+            background-color: white;
+            padding: 10px;
+            border-top-left-radius: 35%;
+            border-bottom-left-radius: 35%;
+            position: absolute;
+            right: -5px;
+            width: 40px;
+            top: -22px;
+            #bulb{
+                width: 10px;
+                height: 10px;
+                border-radius: 50%;
+                border: 1px solid $primary-color;
+                transition: 0.5s;
+            }
+            .bulb-light{
+                width: 20px !important;
+                height: 20px !important;
+                border-radius: 50%;
+                background-color: $primary-color !important;
+                border: none;
+            }
+            
+        }
+        #pageNumbers{
+            transition: 0.5s;
+        }
         right: 10px !important;
     }
     #challengePage{

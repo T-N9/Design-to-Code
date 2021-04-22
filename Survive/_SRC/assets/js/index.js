@@ -7,6 +7,12 @@ document.getElementById('menuBar').onclick=function(){
     document.getElementById('mdNav').classList.toggle('mdNav-animation-inverse');
 }
 
+document.getElementById('pageSwitch').onclick=function(){
+    document.getElementById('bulb').classList.toggle('bulb-light');
+    document.getElementById('pageNumbers').classList.toggle('pageSwitch-animation');
+    document.getElementById('pageNumbers').classList.toggle('pageSwitch-animation-inverse');
+}
+
 imgRightEvent.onclick=function(){
     console.log('Hello Changing Image.');
     var img_1_con=document.getElementById('img-1').classList.contains('d-none');

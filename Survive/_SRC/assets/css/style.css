@@ -45,6 +45,20 @@
   transform: translateY(6px);
 }
 
+.pageSwitch-animation-inverse {
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transform: translateY(-50px);
+  transform: translateY(-50px);
+}
+
+.pageSwitch-animation {
+  visibility: visible;
+  opacity: 1;
+  -webkit-transform: translateY(6px);
+  transform: translateY(6px);
+}
+
 .pace {
   pointer-events: none;
   -webkit-user-select: none;
@@ -611,6 +625,35 @@ body #mainSection #pagination .active {
   }
   #pagination {
     right: 10px !important;
+  }
+  #pagination #pageSwitch {
+    background-color: white;
+    padding: 10px;
+    border-top-left-radius: 35%;
+    border-bottom-left-radius: 35%;
+    position: absolute;
+    right: -5px;
+    width: 40px;
+    top: -22px;
+  }
+  #pagination #pageSwitch #bulb {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    border: 1px solid #E4003B;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+  }
+  #pagination #pageSwitch .bulb-light {
+    width: 20px !important;
+    height: 20px !important;
+    border-radius: 50%;
+    background-color: #E4003B !important;
+    border: none;
+  }
+  #pagination #pageNumbers {
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
   }
   #challengePage {
     padding: 0 !important;
