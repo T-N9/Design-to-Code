@@ -195,8 +195,25 @@
         width: 100% !important;
         height: 605px !important;
     }
+    .pageSwitch-animation-inverse{
+        visibility: hidden;
+        height: 0;
+        opacity: 0;
+        -webkit-transform: translateY(-50px);
+        transform: translateY(-50px);
+    }
+    .pageSwitch-animation{
+        visibility: visible;
+        height: auto;
+        display: block;
+        opacity: 1;
+        -webkit-transform: translateY(6px);
+        transform: translateY(6px);
+    }
     #pagination{
+        z-index: 500;
         #pageSwitch{
+            display: block !important;
             background-color: white;
             padding: 10px;
             border-top-left-radius: 35%;
@@ -236,6 +253,7 @@
         h2{
             margin-left: 0px !important;
             font-size: 40px !important;
+            text-align: center !important;
         }
         .challenge-fact{
             margin-left: 0px !important;
@@ -264,7 +282,31 @@
             left: 0 !important;
         }
     }
-    
+    #resultPage{
+        margin-top: 33vh;
+        padding: 0;
+        .sub-resultPage{
+            padding: 0;
+        }
+        #imgForm{
+            background-size: 210% !important;
+        }
+        #resultCaption{
+            left: 0px !important;
+            display: none !important;
+        }
+        #resultArrow{
+            left: 0 !important;
+            width: 30% !important;
+            bottom: -73px !important;
+        }
+        #resultPageLeft{
+            text-align: center;
+        }
+        #resultPageRight{
+            margin-top: 20px;
+        }
+    }
     
 }
 
@@ -301,6 +343,9 @@
         #missionCard{
             bottom: -445px !important;
         }
+    }
+    #resultPage{
+        margin-top: 40vh;
     }
 }
 @media screen and (max-width:320px){

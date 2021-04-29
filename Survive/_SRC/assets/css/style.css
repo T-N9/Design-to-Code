@@ -13,6 +13,10 @@
   src: url(../fonts/Adevale.ttf);
 }
 
+.red {
+  color: #E4003B;
+}
+
 @-webkit-keyframes hero-img-ani {
   from {
     opacity: 0.5;
@@ -31,6 +35,28 @@
   }
 }
 
+@-webkit-keyframes result-img-ani {
+  from {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  to {
+    -webkit-transform: scale(1.3);
+            transform: scale(1.3);
+  }
+}
+
+@keyframes result-img-ani {
+  from {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  to {
+    -webkit-transform: scale(1.3);
+            transform: scale(1.3);
+  }
+}
+
 .mdNav-animation-inverse {
   visibility: hidden;
   opacity: 0;
@@ -40,23 +66,6 @@
 
 .mdNav-animation {
   visibility: visible;
-  opacity: 1;
-  -webkit-transform: translateY(6px);
-  transform: translateY(6px);
-}
-
-.pageSwitch-animation-inverse {
-  visibility: hidden;
-  height: 0;
-  opacity: 0;
-  -webkit-transform: translateY(-50px);
-  transform: translateY(-50px);
-}
-
-.pageSwitch-animation {
-  visibility: visible;
-  height: auto;
-  display: block;
   opacity: 1;
   -webkit-transform: translateY(6px);
   transform: translateY(6px);
@@ -80,6 +89,42 @@
   z-index: 2005;
 }
 
+.more-btn {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+}
+
+.more-btn img {
+  -webkit-transition: 0.5s linear;
+  transition: 0.5s linear;
+}
+
+.more-btn .btn-caption {
+  padding-left: 15px;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 17px;
+  margin-bottom: 0px;
+  font-family: Teko !important;
+  font-weight: 600;
+}
+
+.more-btn:hover img {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+  -webkit-transform-style: flat;
+          transform-style: flat;
+  -webkit-transition: -webkit-transform 0.5s linear;
+  transition: -webkit-transform 0.5s linear;
+  transition: transform 0.5s linear;
+  transition: transform 0.5s linear, -webkit-transform 0.5s linear;
+}
+
 .pace-inactive {
   display: none;
 }
@@ -87,7 +132,7 @@
 body {
   background-color: #EDF0F2;
   font-family: Teko;
-  height: 400vh;
+  height: 700vh;
 }
 
 body #mainSection #mainContent #navBar {
@@ -285,6 +330,14 @@ body #mainSection #mainContent #challengePage #challengeLeft .challenge-fact {
           align-items: center;
 }
 
+body #mainSection #mainContent #challengePage #challengeLeft .challenge-fact .ch-img {
+  padding: 0;
+}
+
+body #mainSection #mainContent #challengePage #challengeLeft .challenge-fact .skills-caption {
+  padding-right: 0;
+}
+
 body #mainSection #mainContent #challengePage #challengeLeft .challenge-fact .challenge-img {
   height: 260px;
   -o-object-fit: cover;
@@ -305,42 +358,6 @@ body #mainSection #mainContent #challengePage #challengeLeft .challenge-fact h2 
 body #mainSection #mainContent #challengePage .challenge-para {
   font-family: Arial, Helvetica, sans-serif !important;
   font-size: 14px;
-}
-
-body #mainSection #mainContent #challengePage .more-btn {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  cursor: pointer;
-}
-
-body #mainSection #mainContent #challengePage .more-btn img {
-  -webkit-transition: 0.5s linear;
-  transition: 0.5s linear;
-}
-
-body #mainSection #mainContent #challengePage .more-btn .btn-caption {
-  padding-left: 15px;
-  font-weight: 600;
-  text-transform: uppercase;
-  font-size: 17px;
-  margin-bottom: 0px;
-  font-family: Teko !important;
-  font-weight: 600;
-}
-
-body #mainSection #mainContent #challengePage .more-btn:hover img {
-  -webkit-transform: rotate(180deg);
-          transform: rotate(180deg);
-  -webkit-transform-style: flat;
-          transform-style: flat;
-  -webkit-transition: -webkit-transform 0.5s linear;
-  transition: -webkit-transform 0.5s linear;
-  transition: transform 0.5s linear;
-  transition: transform 0.5s linear, -webkit-transform 0.5s linear;
 }
 
 body #mainSection #mainContent #challengePage #challengeRight {
@@ -405,10 +422,116 @@ body #mainSection #mainContent #challengePage #challengeRight #missionCard h3 {
   font-weight: 500;
 }
 
+body #mainSection #mainContent #resultPage {
+  position: relative;
+}
+
+body #mainSection #mainContent #resultPage #resultCaption {
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 120px;
+  position: absolute;
+  letter-spacing: 5px;
+  bottom: 215px;
+  left: 75px;
+  z-index: -1;
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+  color: white;
+}
+
+body #mainSection #mainContent #resultPage #resultArrow {
+  position: absolute;
+  z-index: 10;
+  bottom: 10px;
+  left: 450px;
+  width: 12%;
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+}
+
+body #mainSection #mainContent #resultPage #resultPageLeft {
+  margin-top: 225px;
+}
+
+body #mainSection #mainContent #resultPage #resultPageLeft p {
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+body #mainSection #mainContent #resultPage #resultPageLeft h1 {
+  color: #E4003B;
+  font-size: 200px;
+  font-weight: 600;
+  margin: 0;
+  line-height: 0.7;
+}
+
+body #mainSection #mainContent #resultPage #resultPageLeft h3 {
+  font-size: 50px;
+  font-weight: 600;
+  line-height: 1.0;
+}
+
+body #mainSection #mainContent #resultPage #resultPageRight {
+  overflow: hidden;
+  position: relative;
+  padding: 0 !important;
+}
+
+body #mainSection #mainContent #resultPage #resultPageRight #imgForm {
+  width: 100%;
+  height: 710px;
+  background-image: url(../img/result.png);
+  background-position: center;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  -webkit-animation: result-img-ani 7s linear infinite alternate;
+          animation: result-img-ani 7s linear infinite alternate;
+}
+
+body #mainSection #mainContent #resultPage #resultPageRight #resultSquare {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  top: 0;
+  left: 0;
+}
+
+body #mainSection #mainContent #resultPage #resultPageRight #resultSquare #square {
+  border: 20px solid #E4003B;
+  width: 300px;
+  height: 550px;
+  z-index: 5;
+  padding: 135px 20px 20px 20px;
+}
+
+body #mainSection #mainContent #resultPage #resultPageRight #resultSquare #square #caption {
+  color: white;
+}
+
+body #mainSection #mainContent #resultPage #resultPageRight #resultSquare #square #caption h1 {
+  text-transform: uppercase;
+  font-size: 50px;
+}
+
 body #mainSection #pagination {
   position: fixed;
   right: 20px;
   top: 40vh;
+}
+
+body #mainSection #pagination #pageSwitch {
+  display: none;
 }
 
 body #mainSection #pagination ul {
@@ -626,10 +749,27 @@ body #mainSection #pagination .active {
     width: 100% !important;
     height: 605px !important;
   }
+  .pageSwitch-animation-inverse {
+    visibility: hidden;
+    height: 0;
+    opacity: 0;
+    -webkit-transform: translateY(-50px);
+    transform: translateY(-50px);
+  }
+  .pageSwitch-animation {
+    visibility: visible;
+    height: auto;
+    display: block;
+    opacity: 1;
+    -webkit-transform: translateY(6px);
+    transform: translateY(6px);
+  }
   #pagination {
+    z-index: 500;
     right: 10px !important;
   }
   #pagination #pageSwitch {
+    display: block !important;
     background-color: white;
     padding: 10px;
     border-top-left-radius: 35%;
@@ -667,6 +807,7 @@ body #mainSection #pagination .active {
   #challengeLeft h2 {
     margin-left: 0px !important;
     font-size: 40px !important;
+    text-align: center !important;
   }
   #challengeLeft .challenge-fact {
     margin-left: 0px !important;
@@ -691,6 +832,31 @@ body #mainSection #pagination .active {
     width: 100% !important;
     bottom: -420px !important;
     left: 0 !important;
+  }
+  #resultPage {
+    margin-top: 33vh;
+    padding: 0;
+  }
+  #resultPage .sub-resultPage {
+    padding: 0;
+  }
+  #resultPage #imgForm {
+    background-size: 210% !important;
+  }
+  #resultPage #resultCaption {
+    left: 0px !important;
+    display: none !important;
+  }
+  #resultPage #resultArrow {
+    left: 0 !important;
+    width: 30% !important;
+    bottom: -73px !important;
+  }
+  #resultPage #resultPageLeft {
+    text-align: center;
+  }
+  #resultPage #resultPageRight {
+    margin-top: 20px;
   }
 }
 
@@ -721,6 +887,9 @@ body #mainSection #pagination .active {
   }
   #challengeRight #missionCard {
     bottom: -445px !important;
+  }
+  #resultPage {
+    margin-top: 40vh;
   }
 }
 

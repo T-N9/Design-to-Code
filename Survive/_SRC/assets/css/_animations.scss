@@ -6,6 +6,14 @@
         opacity: 1;
     }
 }
+@keyframes result-img-ani {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(1.3);
+    }
+}
 
 .mdNav-animation-inverse{
     visibility: hidden;
@@ -19,21 +27,7 @@
     -webkit-transform: translateY(6px);
     transform: translateY(6px);
 }
-.pageSwitch-animation-inverse{
-    visibility: hidden;
-    height: 0;
-    opacity: 0;
-    -webkit-transform: translateY(-50px);
-    transform: translateY(-50px);
-}
-.pageSwitch-animation{
-    visibility: visible;
-    height: auto;
-    display: block;
-    opacity: 1;
-    -webkit-transform: translateY(6px);
-    transform: translateY(6px);
-}
+
 // @keyframes mymove {
 //     0%   {top: 0px;}
 //     25%  {top: 200px;}
