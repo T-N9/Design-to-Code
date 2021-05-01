@@ -71,6 +71,10 @@
   transform: translateY(6px);
 }
 
+* {
+  scroll-behavior: smooth;
+}
+
 .pace {
   pointer-events: none;
   -webkit-user-select: none;
@@ -97,6 +101,10 @@
       -ms-flex-align: center;
           align-items: center;
   cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
 
 .more-btn img {
@@ -477,6 +485,7 @@ body #mainSection #mainContent #resultPage #resultPageRight {
   overflow: hidden;
   position: relative;
   padding: 0 !important;
+  margin-top: 27px;
 }
 
 body #mainSection #mainContent #resultPage #resultPageRight #imgForm {
@@ -484,7 +493,7 @@ body #mainSection #mainContent #resultPage #resultPageRight #imgForm {
   height: 710px;
   background-image: url(../img/result.png);
   background-position: center;
-  background-size: 100%;
+  background-size: cover;
   background-repeat: no-repeat;
   -webkit-animation: result-img-ani 7s linear infinite alternate;
           animation: result-img-ani 7s linear infinite alternate;
@@ -538,6 +547,11 @@ body #mainSection #pagination ul {
   list-style-type: none;
 }
 
+body #mainSection #pagination a {
+  padding: 0 !important;
+  color: #212529 !important;
+}
+
 body #mainSection #pagination li {
   font-weight: bold;
   text-align: right;
@@ -545,7 +559,7 @@ body #mainSection #pagination li {
   font-size: 30px;
 }
 
-body #mainSection #pagination .active {
+body #mainSection #pagination .active li {
   font-size: 60px;
   border-bottom: 0.5px solid #E4003B;
 }
@@ -687,6 +701,12 @@ body #mainSection #pagination .active {
     margin-top: 10px;
     margin-bottom: 20px;
   }
+  #challengeLeft h2 {
+    text-align: center !important;
+  }
+  #challengeRight {
+    margin-top: 30px;
+  }
   #challengeRight #caption {
     margin-left: 108px !important;
   }
@@ -697,6 +717,18 @@ body #mainSection #pagination .active {
   }
   #challengeRight #missionCard {
     bottom: -520px !important;
+  }
+  #resultPage {
+    margin-top: 35vh;
+  }
+  #resultPage #resultArrow {
+    left: 0px !important;
+  }
+  #resultPageLeft {
+    text-align: center;
+  }
+  #resultPageRight {
+    margin-top: 50px;
   }
 }
 
@@ -839,9 +871,6 @@ body #mainSection #pagination .active {
   }
   #resultPage .sub-resultPage {
     padding: 0;
-  }
-  #resultPage #imgForm {
-    background-size: 210% !important;
   }
   #resultPage #resultCaption {
     left: 0px !important;

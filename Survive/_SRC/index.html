@@ -27,8 +27,8 @@
 
 <body>
   <!-- Welcome TeNyain Moe Lwin -->
-  <section class="container-fluid" id="mainSection">
-    <section class="container-fluid" id="mainContent">
+  <div class="container-fluid" id="mainSection">
+    <div class="container-fluid" id="mainContent">
       <nav class="container-fluid" id="navBar">
         <img src="assets/img/logo.png" alt="logo" id="logo">
         <div id="navList">
@@ -207,14 +207,20 @@
           </div>
         </div>
         <ul class="pageSwitch-animation-inverse" id="pageNumbers">
-          <li class="active">01</li>
-          <li>02</li>
-          <li>03</li>
+          <a class="nav-link active" href="#landingPage">
+            <li>01</li>
+          </a>
+          <a class="nav-link" href="#challengePage">
+            <li>02</li>
+          </a>
+          <a class="nav-link" href="#resultPage">
+            <li>03</li>
+          </a>
         </ul>
       </div>
-    </section>
+    </div>
 
-  </section>
+  </div>
 
   <!-- jQuery library -->
   <script src="dist/jquery.min.js"></script>

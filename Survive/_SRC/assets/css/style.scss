@@ -1,6 +1,9 @@
 @import 'variables';
 @import 'animations';
 
+* {
+    scroll-behavior: smooth;
+}
 .pace{
     pointer-events: none;
     user-select: none;
@@ -18,7 +21,7 @@
     display: inline-flex;
     align-items: center;
     cursor: pointer;
-    
+    user-select: none;
     img{
         transition: 0.5s linear;
     }
@@ -317,12 +320,13 @@ body{
                     overflow: hidden;
                     position: relative;
                     padding: 0 !important;
+                    margin-top: 27px;
                     #imgForm{
                         width: 100%;
                         height: 710px;
                         background-image: url(../img/result.png);
                         background-position: center;
-                        background-size: 100%;
+                        background-size: cover;
                         background-repeat: no-repeat;
                         animation: result-img-ani 7s linear infinite alternate;
                     }
@@ -366,6 +370,10 @@ body{
             ul{
                 list-style-type: none;
             }
+            a{
+                padding: 0 !important;
+                color: #212529 !important;
+            }
             li{
                 font-weight: bold;
                 text-align: right;
@@ -373,8 +381,10 @@ body{
                 font-size: 30px;
             }
             .active{
-                font-size: 60px;
-                border-bottom: 0.5px solid $primary-color;
+                li{
+                    font-size: 60px;
+                    border-bottom: 0.5px solid $primary-color;
+                }
             }
         }
         

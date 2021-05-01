@@ -1,3 +1,37 @@
+$(document).ready(function(){
+    let screenHeight=$(window).height();
+    console.log(screenHeight);
+
+    $(window).scroll(function () {
+        let currentPos=$(this).scrollTop();
+        console.log(currentPos);
+    });
+});
+
+function navActive(current){
+    $(`.nav-link`).removeClass("active");
+    $(`.nav-link[href='#${current}']`).addClass("active");
+}
+function navScroll(){
+    let currentSec=$("section[id]");
+    currentSec.waypoint(function(direction){
+        if(direction=="down"){
+            let currentId=$(this.element).attr('id');
+            console.log(currentId);
+            navActive(currentId);
+        }
+    },{offset:'0px'});
+    currentSec.waypoint(function(direction){
+        if(direction=="up"){
+            let currentId=$(this.element).attr('id');
+            console.log(currentId);
+            navActive(currentId);
+        }
+    },{offset:'-10px'});
+}
+
+navScroll();
+
 let imgRightEvent=document.getElementById('imgRight');
 let imgLeftEvent=document.getElementById('imgLeft');
 

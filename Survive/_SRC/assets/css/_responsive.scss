@@ -128,7 +128,13 @@
         margin-top: 10px;
         margin-bottom: 20px;
     }
+    #challengeLeft{
+        h2{
+            text-align: center !important;
+        }
+    }
     #challengeRight{
+        margin-top:30px ;
         #caption{
             margin-left: 108px !important;
         }
@@ -140,6 +146,22 @@
         #missionCard{
             bottom: -520px !important;
         }
+    }
+    #resultPage{
+        margin-top: 35vh;
+        #resultCaption{
+            // top: 330px !important;
+
+        }
+        #resultArrow{
+            left: 0px !important;
+        }
+    }
+    #resultPageLeft{
+        text-align: center;
+    }
+    #resultPageRight{
+        margin-top: 50px;
     }
 }
 @media screen and (max-width:576px){
@@ -288,9 +310,7 @@
         .sub-resultPage{
             padding: 0;
         }
-        #imgForm{
-            background-size: 210% !important;
-        }
+        
         #resultCaption{
             left: 0px !important;
             display: none !important;
